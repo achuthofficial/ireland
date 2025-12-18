@@ -1,0 +1,177 @@
+{
+  "analysis_date": "2025-12-17T18:11:27.936999",
+  "phase1_comparison": [
+    {
+      "vendor": "Microsoft Azure Legal",
+      "phase1_score": 0.0,
+      "phase3_score": 32.5,
+      "score_difference": 32.5,
+      "phase1_level": "Low",
+      "phase3_level": "LOW",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Oracle Cloud",
+      "phase1_score": 0.0,
+      "phase3_score": 44.75,
+      "score_difference": 44.75,
+      "phase1_level": "Low",
+      "phase3_level": "MEDIUM",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Digitalocean",
+      "phase1_score": 60.0,
+      "phase3_score": 75.0,
+      "score_difference": 15.0,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Netlify",
+      "phase1_score": 50.0,
+      "phase3_score": 67.5,
+      "score_difference": 17.5,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Vercel",
+      "phase1_score": 40.0,
+      "phase3_score": 72.0,
+      "score_difference": 32.0,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Dropbox",
+      "phase1_score": 25.0,
+      "phase3_score": 71.0,
+      "score_difference": 46.0,
+      "phase1_level": "Low",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Trello",
+      "phase1_score": 0.0,
+      "phase3_score": 50.25,
+      "score_difference": 50.25,
+      "phase1_level": "Low",
+      "phase3_level": "MEDIUM",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Miro",
+      "phase1_score": 20.0,
+      "phase3_score": 71.0,
+      "score_difference": 51.0,
+      "phase1_level": "Low",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Zendesk",
+      "phase1_score": 50.0,
+      "phase3_score": 67.5,
+      "score_difference": 17.5,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Twilio",
+      "phase1_score": 50.0,
+      "phase3_score": 71.0,
+      "score_difference": 21.0,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Intercom",
+      "phase1_score": 60.0,
+      "phase3_score": 75.0,
+      "score_difference": 15.0,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Webflow",
+      "phase1_score": 60.0,
+      "phase3_score": 79.0,
+      "score_difference": 19.0,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Workday",
+      "phase1_score": 0.0,
+      "phase3_score": 41.25,
+      "score_difference": 41.25,
+      "phase1_level": "Low",
+      "phase3_level": "MEDIUM",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Okta",
+      "phase1_score": 60.0,
+      "phase3_score": 68.0,
+      "score_difference": 8.0,
+      "phase1_level": "Medium",
+      "phase3_level": "HIGH",
+      "level_agreement": false
+    },
+    {
+      "vendor": "Sumologic",
+      "phase1_score": 50.0,
+      "phase3_score": 60.5,
+      "score_difference": 10.5,
+      "phase1_level": "Medium",
+      "phase3_level": "MEDIUM",
+      "level_agreement": false
+    }
+  ],
+  "consistency_metrics": {
+    "service_level": {
+      "mean": 76.0,
+      "std_dev": 30.011109054259666,
+      "coefficient_of_variation": 39.488301387183775
+    },
+    "pricing_terms": {
+      "mean": 87.66666666666667,
+      "std_dev": 25.746628689770024,
+      "coefficient_of_variation": 29.368777973121695
+    },
+    "termination_exit": {
+      "mean": 34.333333333333336,
+      "std_dev": 17.78263822446552,
+      "coefficient_of_variation": 51.79409191591898
+    },
+    "data_portability": {
+      "mean": 50.0,
+      "std_dev": 0.0,
+      "coefficient_of_variation": 0.0
+    },
+    "support_obligations": {
+      "mean": 52.0,
+      "std_dev": 17.107503227141788,
+      "coefficient_of_variation": 32.89904466758036
+    }
+  },
+  "detection_accuracy": {
+    "mean_clauses": 3.3333333333333335,
+    "phase1_comparison": 0.7943262411347518,
+    "mean_critical_issues": 4.666666666666667
+  },
+  "reliability_metrics": {
+    "cloud_consistency": 5,
+    "saas_consistency": 7,
+    "enterprise_consistency": 3
+  }
+}

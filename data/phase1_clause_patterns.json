@@ -1,0 +1,424 @@
+{
+  "analysis_date": "2025-12-17",
+  "contracts_analyzed": 53,
+  "successful_analyses": 53,
+  "total_clauses": 213,
+  "high_risk_clauses": 142,
+  "medium_risk_clauses": 71,
+  "high_risk_percentage": 66.66666666666666,
+  "category_statistics": {
+    "pricing_terms": {
+      "total": 63,
+      "high_risk": 42,
+      "medium_risk": 21
+    },
+    "support_obligations": {
+      "total": 48,
+      "high_risk": 37,
+      "medium_risk": 11
+    },
+    "service_level": {
+      "total": 49,
+      "high_risk": 40,
+      "medium_risk": 9
+    },
+    "termination_exit": {
+      "total": 46,
+      "high_risk": 18,
+      "medium_risk": 28
+    },
+    "data_portability": {
+      "total": 7,
+      "high_risk": 5,
+      "medium_risk": 2
+    }
+  },
+  "lock_in_mechanism_counts": {
+    "unilateral_pricing": 2,
+    "no_commitment": 1,
+    "no_guarantee": 12,
+    "price_increase_risk": 42,
+    "no_support_guarantee": 24,
+    "standard": 55,
+    "data_restriction": 6,
+    "automatic_renewal": 18,
+    "no_compensation": 28,
+    "cancellation_penalty": 10,
+    "discontinuation_risk": 11,
+    "exit_fees": 3,
+    "no_notice_changes": 1
+  },
+  "vendor_statistics": {
+    "Airtable": {
+      "total_clauses": 3,
+      "high_risk": 3,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "airtable.html"
+    },
+    "Amplitude": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "amplitude.html"
+    },
+    "Asana": {
+      "total_clauses": 3,
+      "high_risk": 2,
+      "medium_risk": 1,
+      "high_risk_percentage": 66.66666666666666,
+      "contract_file": "asana.html"
+    },
+    "Atlassian": {
+      "total_clauses": 5,
+      "high_risk": 4,
+      "medium_risk": 1,
+      "high_risk_percentage": 80.0,
+      "contract_file": "atlassian.html"
+    },
+    "Aws": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "aws.html"
+    },
+    "Bitbucket": {
+      "total_clauses": 5,
+      "high_risk": 4,
+      "medium_risk": 1,
+      "high_risk_percentage": 80.0,
+      "contract_file": "bitbucket.html"
+    },
+    "Cisco": {
+      "total_clauses": 0,
+      "high_risk": 0,
+      "medium_risk": 0,
+      "high_risk_percentage": 0,
+      "contract_file": "cisco.html"
+    },
+    "Clickup": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "clickup.html"
+    },
+    "Cloudflare": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "cloudflare.html"
+    },
+    "Confluence": {
+      "total_clauses": 5,
+      "high_risk": 4,
+      "medium_risk": 1,
+      "high_risk_percentage": 80.0,
+      "contract_file": "confluence.html"
+    },
+    "Datadog": {
+      "total_clauses": 3,
+      "high_risk": 3,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "datadog.html"
+    },
+    "Digitalocean": {
+      "total_clauses": 5,
+      "high_risk": 4,
+      "medium_risk": 1,
+      "high_risk_percentage": 80.0,
+      "contract_file": "digitalocean.html"
+    },
+    "Docker": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "docker.html"
+    },
+    "Docusign": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "docusign.html"
+    },
+    "Dropbox": {
+      "total_clauses": 0,
+      "high_risk": 0,
+      "medium_risk": 0,
+      "high_risk_percentage": 0,
+      "contract_file": "dropbox2.html"
+    },
+    "Fastly": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "fastly.html"
+    },
+    "Fly": {
+      "total_clauses": 7,
+      "high_risk": 2,
+      "medium_risk": 5,
+      "high_risk_percentage": 28.57142857142857,
+      "contract_file": "fly.html"
+    },
+    "Gitlab": {
+      "total_clauses": 1,
+      "high_risk": 0,
+      "medium_risk": 1,
+      "high_risk_percentage": 0.0,
+      "contract_file": "gitlab.html"
+    },
+    "Google Cloud": {
+      "total_clauses": 11,
+      "high_risk": 0,
+      "medium_risk": 11,
+      "high_risk_percentage": 0.0,
+      "contract_file": "google_cloud.html"
+    },
+    "Hubspot": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "hubspot.html"
+    },
+    "Icloud": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "icloud.html"
+    },
+    "Intercom": {
+      "total_clauses": 7,
+      "high_risk": 4,
+      "medium_risk": 3,
+      "high_risk_percentage": 57.14285714285714,
+      "contract_file": "intercom.html"
+    },
+    "Jenkins": {
+      "total_clauses": 1,
+      "high_risk": 0,
+      "medium_risk": 1,
+      "high_risk_percentage": 0.0,
+      "contract_file": "jenkins.html"
+    },
+    "Jira": {
+      "total_clauses": 5,
+      "high_risk": 4,
+      "medium_risk": 1,
+      "high_risk_percentage": 80.0,
+      "contract_file": "jira.html"
+    },
+    "Mailchimp": {
+      "total_clauses": 8,
+      "high_risk": 6,
+      "medium_risk": 2,
+      "high_risk_percentage": 75.0,
+      "contract_file": "mailchimp.html"
+    },
+    "Mailgun": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "mailgun.html"
+    },
+    "Mixpanel": {
+      "total_clauses": 5,
+      "high_risk": 3,
+      "medium_risk": 2,
+      "high_risk_percentage": 60.0,
+      "contract_file": "mixpanel.html"
+    },
+    "Monday": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "monday.html"
+    },
+    "Mongodb": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "mongodb.html"
+    },
+    "Netlify": {
+      "total_clauses": 2,
+      "high_risk": 2,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "netlify.html"
+    },
+    "Newrelic": {
+      "total_clauses": 3,
+      "high_risk": 0,
+      "medium_risk": 3,
+      "high_risk_percentage": 0.0,
+      "contract_file": "newrelic.html"
+    },
+    "Notion": {
+      "total_clauses": 0,
+      "high_risk": 0,
+      "medium_risk": 0,
+      "high_risk_percentage": 0,
+      "contract_file": "notion.html"
+    },
+    "Okta": {
+      "total_clauses": 3,
+      "high_risk": 0,
+      "medium_risk": 3,
+      "high_risk_percentage": 0.0,
+      "contract_file": "okta.html"
+    },
+    "Pagerduty": {
+      "total_clauses": 8,
+      "high_risk": 0,
+      "medium_risk": 8,
+      "high_risk_percentage": 0.0,
+      "contract_file": "pagerduty.html"
+    },
+    "Postmark": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "postmark.html"
+    },
+    "Railway": {
+      "total_clauses": 0,
+      "high_risk": 0,
+      "medium_risk": 0,
+      "high_risk_percentage": 0,
+      "contract_file": "railway.html"
+    },
+    "Render": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "render.html"
+    },
+    "Segment": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "segment.html"
+    },
+    "Sendgrid": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "sendgrid.html"
+    },
+    "Shopify": {
+      "total_clauses": 10,
+      "high_risk": 1,
+      "medium_risk": 9,
+      "high_risk_percentage": 10.0,
+      "contract_file": "shopify.html"
+    },
+    "Slack": {
+      "total_clauses": 2,
+      "high_risk": 0,
+      "medium_risk": 2,
+      "high_risk_percentage": 0.0,
+      "contract_file": "slack.html"
+    },
+    "Splunk": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "splunk.html"
+    },
+    "Squarespace": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "squarespace.html"
+    },
+    "Stripe": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "stripe.html"
+    },
+    "Supabase": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "supabase.html"
+    },
+    "Sync": {
+      "total_clauses": 3,
+      "high_risk": 2,
+      "medium_risk": 1,
+      "high_risk_percentage": 66.66666666666666,
+      "contract_file": "sync.html"
+    },
+    "Trello": {
+      "total_clauses": 5,
+      "high_risk": 4,
+      "medium_risk": 1,
+      "high_risk_percentage": 80.0,
+      "contract_file": "trello.html"
+    },
+    "Twilio": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "twilio.html"
+    },
+    "Vercel": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "vercel.html"
+    },
+    "Wix": {
+      "total_clauses": 3,
+      "high_risk": 1,
+      "medium_risk": 2,
+      "high_risk_percentage": 33.33333333333333,
+      "contract_file": "wix.html"
+    },
+    "Wordpress": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "wordpress.html"
+    },
+    "Zendesk": {
+      "total_clauses": 4,
+      "high_risk": 3,
+      "medium_risk": 1,
+      "high_risk_percentage": 75.0,
+      "contract_file": "zendesk.html"
+    },
+    "Zoom": {
+      "total_clauses": 4,
+      "high_risk": 4,
+      "medium_risk": 0,
+      "high_risk_percentage": 100.0,
+      "contract_file": "zoom.html"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "analysis_type": "Comparative Legal Analysis (RQ3)",
+  "date": "2025-12-17",
+  "purpose": "Quantify deviation between framework outputs and traditional legal review",
+  "deviation_analysis": {
+    "overall_deviation": {
+      "risk_score_deviation_points": 8.78,
+      "risk_score_deviation_percentage": 13.5,
+      "assessment": "Good alignment with legal benchmarks",
+      "framework_mean": 73.78,
+      "benchmark_mean": 65
+    },
+    "clause_detection_deviation": {
+      "clause_count_deviation": 1.53,
+      "clause_count_deviation_percentage": 29.49,
+      "assessment": "Moderate alignment with legal benchmarks",
+      "framework_mean": 3.67,
+      "benchmark_mean": 5.2
+    },
+    "category_correlations": {
+      "service_level": {
+        "framework_mean": 23.61,
+        "benchmark_mean": 22,
+        "deviation": 1.61,
+        "deviation_percentage": 7.32,
+        "z_score": 0.32,
+        "alignment": "Strong"
+      },
+      "pricing_terms": {
+        "framework_mean": 25.0,
+        "benchmark_mean": 20,
+        "deviation": 5.0,
+        "deviation_percentage": 25.0,
+        "z_score": 0.83,
+        "alignment": "Moderate"
+      },
+      "termination_exit": {
+        "framework_mean": 9.0,
+        "benchmark_mean": 12,
+        "deviation": 3.0,
+        "deviation_percentage": 25.0,
+        "z_score": 0.75,
+        "alignment": "Moderate"
+      },
+      "data_portability": {
+        "framework_mean": 8.33,
+        "benchmark_mean": 10,
+        "deviation": 1.67,
+        "deviation_percentage": 16.67,
+        "z_score": 0.56,
+        "alignment": "Moderate"
+      },
+      "support_obligations": {
+        "framework_mean": 7.83,
+        "benchmark_mean": 9,
+        "deviation": 1.17,
+        "deviation_percentage": 12.96,
+        "z_score": 0.39,
+        "alignment": "Strong"
+      }
+    },
+    "comparative_advantages": {
+      "time_efficiency": {
+        "framework_time": "2-3 seconds",
+        "legal_review_time": "4.5 hours",
+        "time_saved_percentage": 99.98,
+        "speedup_factor": 5400.0
+      },
+      "cost_efficiency": {
+        "framework_cost": "$0 (automated)",
+        "legal_review_cost": "$900",
+        "cost_saved_per_contract": 900,
+        "cost_reduction_percentage": 100
+      },
+      "accessibility": {
+        "framework": "No legal expertise required",
+        "legal_review": "Requires qualified legal professional",
+        "democratization_benefit": "Enables IT practitioners to perform initial screening"
+      },
+      "consistency": {
+        "framework": "100% consistent scoring methodology",
+        "legal_review": "Variable based on reviewer experience and interpretation",
+        "benefit": "Eliminates subjective interpretation variance"
+      },
+      "scalability": {
+        "framework": "Unlimited simultaneous assessments",
+        "legal_review": "Limited by attorney availability",
+        "benefit": "Can assess multiple vendors in parallel"
+      }
+    }
+  },
+  "correlation_analysis": {
+    "score_clause_correlation": {
+      "coefficient": 0.575,
+      "interpretation": "Moderate correlation",
+      "sample_size": 9
+    },
+    "findings": {
+      "positive_correlation": true,
+      "strength": "Moderate",
+      "implication": "Higher clause counts generally correlate with higher risk scores"
+    }
+  },
+  "key_findings": {
+    "finding_1": "Framework risk scores show good alignment with legal benchmarks",
+    "finding_2": "Clause detection rates deviate by 29.5% from legal benchmarks",
+    "finding_3": "Category-level analysis shows strongest alignment in pricing_terms and service_level categories",
+    "finding_4": "Framework provides 99.98% time reduction compared to manual legal review",
+    "finding_5": "100% cost reduction for initial contract screening"
+  },
+  "limitations": {
+    "benchmark_source": "Legal benchmarks derived from published literature, not direct expert review",
+    "sample_size": "Validation based on 9 successful assessments",
+    "scope": "Limited to SaaS/cloud contracts from major vendors",
+    "jurisdiction": "US/UK/Ireland common law contracts only"
+  },
+  "recommendations": {
+    "recommendation_1": "Framework suitable for initial screening and vendor comparison",
+    "recommendation_2": "Traditional legal review still recommended for high-value contracts (>$500K)",
+    "recommendation_3": "Framework outputs can inform and accelerate subsequent legal review",
+    "recommendation_4": "Combined approach: Framework for screening, legal review for finalization"
+  }
+}

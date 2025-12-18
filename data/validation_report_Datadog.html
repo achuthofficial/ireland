@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Assessment Report - Datadog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .risk-summary {
+            background: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .risk-summary h2 {
+            color: #721c24;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .risk-score {
+            font-size: 3em;
+            font-weight: bold;
+            color: #dc3545;
+            margin: 15px 0;
+        }
+
+        .risk-level {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #dc3545;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section h2 {
+            color: #007bff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .section h3 {
+            color: #495057;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+        }
+
+        .category-card {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .category-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .category-score {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #ffc107, #dc3545);
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .issue-card {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .issue-card.high {
+            border-left-color: #dc3545;
+        }
+
+        .issue-card.medium {
+            border-left-color: #ffc107;
+        }
+
+        .issue-card.low {
+            border-left-color: #28a745;
+        }
+
+        .issue-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #212529;
+            margin-bottom: 10px;
+        }
+
+        .issue-description {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .negotiation-points {
+            margin: 15px 0;
+        }
+
+        .negotiation-points ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .negotiation-points li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .negotiation-points li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .template-box {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .template-label {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 8px;
+        }
+
+        .recommendation-list {
+            background: #e7f3ff;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .recommendation-list li {
+            margin: 10px 0;
+            padding-left: 10px;
+        }
+
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .priority-badge.high {
+            background: #dc3545;
+            color: white;
+        }
+
+        .priority-badge.medium {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .priority-badge.low {
+            background: #28a745;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #dee2e6;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vendor Contract Risk Assessment Report</h1>
+            <div class="subtitle">
+                Automated Lock-In Risk Analysis for IT Practitioners
+            </div>
+            <div class="subtitle" style="margin-top: 10px;">
+                Generated: December 17, 2025 at 07:34 PM
+            </div>
+        </div>
+
+        <div class="risk-summary">
+            <h2>Datadog</h2>
+            <div class="risk-score">75.0/100</div>
+            <div class="risk-level">HIGH RISK</div>
+            <p style="margin-top: 15px; color: #721c24; font-size: 1.1em;">
+                This contract presents significant vendor lock-in risk. We strongly recommend extensive negotiation or consideration of alternative vendors before signing.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                This automated risk assessment analyzed the vendor contract across five critical categories
+                that impact vendor lock-in and switching costs. The analysis uses a 100-point weighted scoring
+                system based on empirical research of 61 major vendor contracts.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Risk Breakdown by Category</h2>
+            
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-name">Service Level Agreements</div>
+                    <div class="category-score" style="color: #dc3545;">25.0/25</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100.0%; background: #dc3545;">
+                        100%
+                    </div>
+                </div>
+                <div style="margin-top: 10px; color: #666; font-size: 0.95em;">
+                    1 clauses analyzed • 1 high-risk (100%)
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-name">Pricing Terms</div>
+                    <div class="category-score" style="color: #dc3545;">25.0/25</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100.0%; background: #dc3545;">
+                        100%
+                    </div>
+                </div>
+                <div style="margin-top: 10px; color: #666; font-size: 0.95em;">
+                    1 clauses analyzed • 1 high-risk (100%)
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-name">Termination & Exit</div>
+                    <div class="category-score" style="color: #ffc107;">10.0/20</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50.0%; background: #ffc107;">
+                        50%
+                    </div>
+                </div>
+                <div style="margin-top: 10px; color: #666; font-size: 0.95em;">
+                    1 clauses analyzed • 1 high-risk (100%)
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-name">Data Portability</div>
+                    <div class="category-score" style="color: #ffc107;">7.5/15</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50.0%; background: #ffc107;">
+                        50%
+                    </div>
+                </div>
+                <div style="margin-top: 10px; color: #666; font-size: 0.95em;">
+                    0 clauses analyzed • 0 high-risk (0%)
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-name">Support Obligations</div>
+                    <div class="category-score" style="color: #ffc107;">7.5/15</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50.0%; background: #ffc107;">
+                        50%
+                    </div>
+                </div>
+                <div style="margin-top: 10px; color: #666; font-size: 0.95em;">
+                    0 clauses analyzed • 0 high-risk (0%)
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h2>Critical Issues Identified</h2>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    1. No SLA provided
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Service Level
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Request minimum 99.5% uptime guarantee</li><li>Define 'Uptime' clearly</li><li>Exclude planned maintenance (with notice)</li><li>Specify measurement methodology</li><li>Include monitoring and reporting</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    2. No compensation for downtime
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Service Level
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Tiered service credit structure</li><li>Meaningful credit percentages (10-50%)</li><li>Termination right for severe failures</li><li>Refund option for repeated failures</li><li>Credits applied automatically</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    3. Best effort service delivery
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Service Level
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Replace 'best effort' with specific metrics</li><li>Request written SLA in contract</li><li>Include infrastructure commitments</li><li>Define disaster recovery requirements</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    4. Unilateral price increases
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Pricing Terms
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Request price lock for initial term</li><li>Cap annual increases (e.g., 5% or CPI)</li><li>Require 90+ days advance notice</li><li>Include termination right if increase exceeds cap</li><li>Request multi-year price protection</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    5. Auto-renewal with new pricing
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Pricing Terms
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Renewal at current pricing, not future pricing</li><li>90-day notice for price changes</li><li>Opt-out right within 30 days of notice</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    6. Early termination fees
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Termination Exit
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>No penalty for 'for cause' termination</li><li>Reduce early termination fee (50% or less)</li><li>Cap maximum penalty (e.g., 3 months fees)</li><li>Include service failure as 'for cause'</li><li>Request waiver for vendor breach</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    7. Cannot terminate during contract term
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Termination Exit
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Include convenience termination option</li><li>Define specific 'for cause' triggers</li><li>No penalty for vendor breach</li><li>SLA failure as termination trigger</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    8. No data export provisions
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Data Portability
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Request explicit data export rights</li><li>Specify standard file formats (CSV, JSON, XML)</li><li>Require API access for bulk export</li><li>Ensure no additional fees for data export</li><li>Request 30-day grace period after termination</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    9. Proprietary data formats
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Data Portability
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Insist on standard format support</li><li>Request format conversion tools</li><li>Clarify no lock-in to proprietary formats</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="issue-card high">
+                <div class="issue-title">
+                    10. Immediate data deletion on termination
+                    <span class="priority-badge high">HIGH</span>
+                </div>
+                <div class="issue-description">
+                    <strong>Category:</strong> Data Portability
+                </div>
+                <div class="negotiation-points">
+                    <strong>Key Negotiation Points:</strong>
+                    <ul>
+                        <li>Request 30-day data retention post-termination</li><li>Require confirmation before deletion</li><li>Request data retrieval assistance</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h2>Negotiation Recommendations</h2>
+            <div class="recommendation-list">
+                <h3>Recommended Actions (Priority Order):</h3>
+                <ol>
+                    <li>CRITICAL: This contract presents significant lock-in risk. Strongly consider alternative vendors or extensive negotiation.</li>
+<li>Prepare to walk away if critical issues cannot be resolved.</li>
+<li>Focus on the top 3-5 highest priority issues first.</li>
+<li>Request executive-level review on vendor side.</li>
+
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Alternative Contract Language</h2>
+            <p style="margin-bottom: 20px;">
+                The following sections provide recommended contract language to address identified risks.
+                Work with your procurement and legal teams to propose these modifications to the vendor.
+            </p>
+            
+            <h3>1. Level No Sla Provided (Service)</h3>
+            <div class="template-label">❌ Problematic Language:</div>
+            <div class="template-box" style="border-left: 3px solid #dc3545;">
+                Services are provided 'as is' with no uptime or availability guarantees.
+            </div>
+            <div class="template-label" style="margin-top: 15px;">✅ Recommended Language:</div>
+            <div class="template-box" style="border-left: 3px solid #28a745;">
+                Vendor guarantees [99.9%] Monthly Uptime for the production environment. 'Monthly Uptime' is calculated as: (Total minutes in month - Downtime minutes) / Total minutes in month. Planned maintenance (with 7 days' notice) is excluded from Downtime.
+            </div>
+            
+            <h3>2. Level No Compensation For Downtime (Service)</h3>
+            <div class="template-label">❌ Problematic Language:</div>
+            <div class="template-box" style="border-left: 3px solid #dc3545;">
+                Vendor's sole liability for service failures is to use reasonable efforts to restore service.
+            </div>
+            <div class="template-label" style="margin-top: 15px;">✅ Recommended Language:</div>
+            <div class="template-box" style="border-left: 3px solid #28a745;">
+                If Monthly Uptime falls below the SLA, Customer shall receive Service Credits as follows: (a) <99.9% - 10% credit, (b) <99.0% - 25% credit, (c) <95.0% - 50% credit. For outages exceeding 72 consecutive hours or 3 SLA failures in 6 months, Customer may terminate without penalty and receive full refund of prepaid fees.
+            </div>
+            
+            <h3>3. Level Best Effort Service Delivery (Service)</h3>
+            <div class="template-label">❌ Problematic Language:</div>
+            <div class="template-box" style="border-left: 3px solid #dc3545;">
+                Vendor will make commercially reasonable efforts to maintain service availability.
+            </div>
+            <div class="template-label" style="margin-top: 15px;">✅ Recommended Language:</div>
+            <div class="template-box" style="border-left: 3px solid #28a745;">
+                Vendor commits to the specific Service Levels set forth in Exhibit B, including uptime guarantees, response times, and performance metrics. Vendor shall implement redundancy, backup systems, and disaster recovery procedures to meet these commitments.
+            </div>
+            
+            <h3>4. Terms Unilateral Price Increases (Pricing)</h3>
+            <div class="template-label">❌ Problematic Language:</div>
+            <div class="template-box" style="border-left: 3px solid #dc3545;">
+                Vendor may modify pricing at any time in its sole discretion.
+            </div>
+            <div class="template-label" style="margin-top: 15px;">✅ Recommended Language:</div>
+            <div class="template-box" style="border-left: 3px solid #28a745;">
+                Pricing shall remain fixed for the Initial Term. For renewal terms, Vendor may increase pricing by no more than [5%] annually or the Consumer Price Index (CPI), whichever is lower, with at least 90 days' advance written notice. Customer may terminate without penalty if price increase exceeds this threshold.
+            </div>
+            
+            <h3>5. Terms Auto-Renewal With New Pricing (Pricing)</h3>
+            <div class="template-label">❌ Problematic Language:</div>
+            <div class="template-box" style="border-left: 3px solid #dc3545;">
+                Subscription automatically renews at the then-current pricing.
+            </div>
+            <div class="template-label" style="margin-top: 15px;">✅ Recommended Language:</div>
+            <div class="template-box" style="border-left: 3px solid #28a745;">
+                Subscription shall automatically renew at the pricing in effect at the commencement of the current term, unless Vendor provides written notice of price changes at least 90 days prior to renewal. Customer may opt-out of renewal within 30 days of price change notice without penalty.
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h2>Negotiation Strategy</h2>
+            <div class="recommendation-list">
+                <ul>
+                    <li>Prioritize based on business impact: Focus negotiation efforts on clauses that pose the highest risk to your organization. Use the risk assessment scores to prioritize: SLAs and pricing are typically highest priority.</li>
+<li>Request redlines in writing: Always request and review vendor responses to your proposed changes in writing. Verbal commitments are not enforceable.</li>
+<li>Benchmark against industry standards: Reference industry-standard contract terms and competitor offerings during negotiations. Use the comparison data from multiple vendor assessments.</li>
+<li>Bundle requests: Present multiple requested changes together rather than one-at-a-time. This gives you negotiation flexibility and shows you've done comprehensive review.</li>
+<li>Know your alternatives: Have backup vendor options identified. This strengthens your negotiating position and provides genuine alternatives if negotiations fail.</li>
+<li>Escalate strategically: If initial vendor contact (sales, legal) won't negotiate key terms, escalate to management. Express willingness to walk away if critical issues aren't addressed.</li>
+<li>Document everything: Keep records of all negotiations, proposed changes, vendor responses, and final agreed terms. This protects you if disputes arise later.</li>
+<li>Use proof of concept (POC) leverage: Negotiate contract terms before or during POC period when vendor is most motivated to close the deal.</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>About This Assessment</h2>
+            <h3>Methodology</h3>
+            <p>
+                This assessment uses a validated framework based on systematic content analysis of 61
+                vendor contracts from major software providers. The 100-point weighted scoring system
+                prioritizes categories based on empirical risk data:
+            </p>
+            <ul style="margin: 15px 0 15px 30px; line-height: 2;">
+                <li><strong>Service Level Agreements (25 points)</strong> - Highest risk category (81.1% of SLA clauses were high-risk)</li>
+                <li><strong>Pricing Terms (25 points)</strong> - Second highest risk (66.1% high-risk)</li>
+                <li><strong>Termination/Exit (20 points)</strong> - Moderate risk (41.3% high-risk)</li>
+                <li><strong>Data Portability (15 points)</strong> - Often under-addressed</li>
+                <li><strong>Support Obligations (15 points)</strong> - Lower average risk (25.0% high-risk)</li>
+            </ul>
+
+            <h3>Limitations</h3>
+            <p>
+                This automated assessment identifies common lock-in mechanisms but cannot replace
+                professional legal review. Always consult with qualified legal counsel before signing
+                contracts, especially for high-value or business-critical services.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Automated Vendor Contract Risk Assessment Tool</strong></p>
+            <p>Phase 2 Framework - Research Project</p>
+            <p>For IT practitioners evaluating vendor lock-in risks</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">
+                This report is for informational purposes only and does not constitute legal advice.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+{
+  "data_portability": {
+    "category_name": "Data Portability Provisions",
+    "description": "Templates for ensuring data export rights and migration capabilities",
+    "templates": [
+      {
+        "issue": "No data export provisions",
+        "problematic_language": "Vendor retains all rights to data formats and structures.",
+        "recommended_language": "Customer has the right to export all Customer Data at any time during the term and for 30 days after termination, in commonly used, machine-readable formats (CSV, JSON, XML) at no additional charge. Vendor shall provide API access and documentation to facilitate bulk data export.",
+        "negotiation_points": [
+          "Request explicit data export rights",
+          "Specify standard file formats (CSV, JSON, XML)",
+          "Require API access for bulk export",
+          "Ensure no additional fees for data export",
+          "Request 30-day grace period after termination"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Proprietary data formats",
+        "problematic_language": "Data is provided in Vendor's proprietary format only.",
+        "recommended_language": "Vendor shall provide Customer Data in both Vendor's native format and at least one industry-standard open format (such as CSV, JSON, or XML) upon Customer request.",
+        "negotiation_points": [
+          "Insist on standard format support",
+          "Request format conversion tools",
+          "Clarify no lock-in to proprietary formats"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Limited API access",
+        "problematic_language": "API access may be restricted or discontinued at Vendor's discretion.",
+        "recommended_language": "Vendor shall provide and maintain API access for data export and integration throughout the term. Any changes to API functionality shall be communicated at least 90 days in advance.",
+        "negotiation_points": [
+          "Guarantee API access for contract duration",
+          "Request API stability commitment",
+          "Require advance notice for API changes (90+ days)"
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "issue": "Immediate data deletion on termination",
+        "problematic_language": "Upon termination, all Customer Data will be immediately deleted.",
+        "recommended_language": "Upon termination, Vendor shall provide Customer with 30 days to retrieve all Customer Data. Vendor shall not delete Customer Data until the earlier of (a) 30 days after termination, or (b) Customer's written confirmation of successful data retrieval.",
+        "negotiation_points": [
+          "Request 30-day data retention post-termination",
+          "Require confirmation before deletion",
+          "Request data retrieval assistance"
+        ],
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "pricing_terms": {
+    "category_name": "Pricing and Payment Terms",
+    "description": "Templates for protecting against unilateral price increases",
+    "templates": [
+      {
+        "issue": "Unilateral price increases",
+        "problematic_language": "Vendor may modify pricing at any time in its sole discretion.",
+        "recommended_language": "Pricing shall remain fixed for the Initial Term. For renewal terms, Vendor may increase pricing by no more than [5%] annually or the Consumer Price Index (CPI), whichever is lower, with at least 90 days' advance written notice. Customer may terminate without penalty if price increase exceeds this threshold.",
+        "negotiation_points": [
+          "Request price lock for initial term",
+          "Cap annual increases (e.g., 5% or CPI)",
+          "Require 90+ days advance notice",
+          "Include termination right if increase exceeds cap",
+          "Request multi-year price protection"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "No advance notice of price changes",
+        "problematic_language": "Price changes may take effect immediately upon posting.",
+        "recommended_language": "Vendor shall provide Customer with at least 90 days' advance written notice of any pricing changes. Changes shall not apply to the current subscription period and shall only take effect upon renewal.",
+        "negotiation_points": [
+          "Require 90-day minimum notice",
+          "Changes effective only at renewal",
+          "Written notice requirement"
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "issue": "Auto-renewal with new pricing",
+        "problematic_language": "Subscription automatically renews at the then-current pricing.",
+        "recommended_language": "Subscription shall automatically renew at the pricing in effect at the commencement of the current term, unless Vendor provides written notice of price changes at least 90 days prior to renewal. Customer may opt-out of renewal within 30 days of price change notice without penalty.",
+        "negotiation_points": [
+          "Renewal at current pricing, not future pricing",
+          "90-day notice for price changes",
+          "Opt-out right within 30 days of notice"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Discretionary fee adjustments",
+        "problematic_language": "Vendor reserves the right to charge additional fees for services at its discretion.",
+        "recommended_language": "All fees are set forth in the Order Form. Vendor may not charge additional fees without Customer's prior written consent, except for usage-based fees explicitly described in the Order Form.",
+        "negotiation_points": [
+          "All fees listed in Order Form",
+          "No surprise fees without consent",
+          "Clear usage-based pricing if applicable"
+        ],
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "support_obligations": {
+    "category_name": "Support Obligations",
+    "description": "Templates for ensuring vendor support commitments",
+    "templates": [
+      {
+        "issue": "No support guarantee",
+        "problematic_language": "Support is provided on a best-effort basis with no guaranteed response times.",
+        "recommended_language": "Vendor shall provide [tier level] support with the following response times: (a) Critical issues - 2 business hours, (b) High priority - 4 business hours, (c) Medium priority - 1 business day, (d) Low priority - 3 business days. Support shall be available [business hours/24x7] via [email, phone, portal].",
+        "negotiation_points": [
+          "Define specific support tier",
+          "Set response time commitments by priority",
+          "Specify support hours (business hours vs 24x7)",
+          "Define support channels (email, phone, portal)",
+          "Include escalation procedures"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Service discontinuation rights",
+        "problematic_language": "Vendor may discontinue or modify features at any time without notice.",
+        "recommended_language": "Vendor may discontinue features only with 180 days' advance written notice. If discontinued feature was material to Customer's use case, Customer may terminate the Agreement without penalty and receive a pro-rated refund.",
+        "negotiation_points": [
+          "Require 180-day notice for discontinuation",
+          "Define 'material features'",
+          "Include termination right for material changes",
+          "Request pro-rated refund option"
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "issue": "Best effort only",
+        "problematic_language": "Vendor will make commercially reasonable efforts to provide support.",
+        "recommended_language": "Vendor commits to providing the support services described in Exhibit A, including specific response times, resolution targets, and escalation procedures. 'Commercially reasonable efforts' shall not apply to Customer support obligations.",
+        "negotiation_points": [
+          "Replace 'best effort' with specific commitments",
+          "Define support levels in writing",
+          "Include measurable SLAs"
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "issue": "No update commitments",
+        "problematic_language": "Updates and patches are provided at Vendor's discretion.",
+        "recommended_language": "Vendor shall provide regular software updates including security patches, bug fixes, and feature enhancements at no additional charge. Critical security patches shall be made available within [timeframe] of discovery.",
+        "negotiation_points": [
+          "Guarantee regular updates included in subscription",
+          "Specify security patch timeline",
+          "No additional charge for updates"
+        ],
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "termination_exit": {
+    "category_name": "Termination and Exit Clauses",
+    "description": "Templates for ensuring flexible termination rights",
+    "templates": [
+      {
+        "issue": "Early termination fees",
+        "problematic_language": "Customer shall pay [100%] of remaining contract value for early termination.",
+        "recommended_language": "For cause termination (breach, bankruptcy, service failure) shall incur no penalty. For convenience termination, Customer may terminate with 60 days' notice and payment of [50% or 3 months] of remaining fees, whichever is less.",
+        "negotiation_points": [
+          "No penalty for 'for cause' termination",
+          "Reduce early termination fee (50% or less)",
+          "Cap maximum penalty (e.g., 3 months fees)",
+          "Include service failure as 'for cause'",
+          "Request waiver for vendor breach"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Cannot terminate during contract term",
+        "problematic_language": "Agreement cannot be terminated prior to end of Initial Term except for cause.",
+        "recommended_language": "Either party may terminate for convenience with 90 days' written notice, subject to early termination provisions. Customer may also terminate without penalty if: (a) Vendor materially breaches, (b) service availability falls below SLA for 3 consecutive months, or (c) pricing increases exceed agreed thresholds.",
+        "negotiation_points": [
+          "Include convenience termination option",
+          "Define specific 'for cause' triggers",
+          "No penalty for vendor breach",
+          "SLA failure as termination trigger"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Auto-renewal trap",
+        "problematic_language": "Agreement automatically renews for successive one-year terms unless cancelled 90 days prior to renewal.",
+        "recommended_language": "Agreement shall renew for one-year terms unless either party provides 30 days' written notice of non-renewal. Vendor shall send renewal reminder 60 days prior to each renewal date.",
+        "negotiation_points": [
+          "Reduce notice period to 30 days",
+          "Request renewal reminders from vendor",
+          "Option for month-to-month after initial term",
+          "No automatic multi-year renewals"
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "issue": "No transition assistance",
+        "problematic_language": "Upon termination, Vendor has no obligation to assist with data migration or service transition.",
+        "recommended_language": "Upon termination for any reason, Vendor shall provide reasonable transition assistance for up to 60 days, including: (a) continued system access for data export, (b) technical documentation, (c) data format specifications, and (d) consulting assistance (at standard rates) if requested.",
+        "negotiation_points": [
+          "Request 60-day transition period",
+          "Continued access for data retrieval",
+          "Technical documentation",
+          "Optional paid transition assistance"
+        ],
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "service_level": {
+    "category_name": "Service Level Agreements",
+    "description": "Templates for ensuring meaningful SLA commitments",
+    "templates": [
+      {
+        "issue": "No SLA provided",
+        "problematic_language": "Services are provided 'as is' with no uptime or availability guarantees.",
+        "recommended_language": "Vendor guarantees [99.9%] Monthly Uptime for the production environment. 'Monthly Uptime' is calculated as: (Total minutes in month - Downtime minutes) / Total minutes in month. Planned maintenance (with 7 days' notice) is excluded from Downtime.",
+        "negotiation_points": [
+          "Request minimum 99.5% uptime guarantee",
+          "Define 'Uptime' clearly",
+          "Exclude planned maintenance (with notice)",
+          "Specify measurement methodology",
+          "Include monitoring and reporting"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "No compensation for downtime",
+        "problematic_language": "Vendor's sole liability for service failures is to use reasonable efforts to restore service.",
+        "recommended_language": "If Monthly Uptime falls below the SLA, Customer shall receive Service Credits as follows: (a) <99.9% - 10% credit, (b) <99.0% - 25% credit, (c) <95.0% - 50% credit. For outages exceeding 72 consecutive hours or 3 SLA failures in 6 months, Customer may terminate without penalty and receive full refund of prepaid fees.",
+        "negotiation_points": [
+          "Tiered service credit structure",
+          "Meaningful credit percentages (10-50%)",
+          "Termination right for severe failures",
+          "Refund option for repeated failures",
+          "Credits applied automatically"
+        ],
+        "priority": "HIGH"
+      },
+      {
+        "issue": "Service credits as sole remedy",
+        "problematic_language": "Service credits are Customer's sole and exclusive remedy for service level failures.",
+        "recommended_language": "Service Credits are provided in addition to, not in lieu of, all other rights and remedies available to Customer under this Agreement or applicable law. Nothing in this Agreement limits Customer's right to pursue damages for Vendor's gross negligence, willful misconduct, or breach of data security obligations.",
+        "negotiation_points": [
+          "Credits in addition to other remedies",
+          "Preserve right to damages",
+          "Exclude gross negligence from limitation",
+          "Preserve data breach liability"
+        ],
+        "priority": "MEDIUM"
+      },
+      {
+        "issue": "Best effort service delivery",
+        "problematic_language": "Vendor will make commercially reasonable efforts to maintain service availability.",
+        "recommended_language": "Vendor commits to the specific Service Levels set forth in Exhibit B, including uptime guarantees, response times, and performance metrics. Vendor shall implement redundancy, backup systems, and disaster recovery procedures to meet these commitments.",
+        "negotiation_points": [
+          "Replace 'best effort' with specific metrics",
+          "Request written SLA in contract",
+          "Include infrastructure commitments",
+          "Define disaster recovery requirements"
+        ],
+        "priority": "HIGH"
+      }
+    ]
+  },
+  "general_negotiation_strategies": {
+    "description": "Overall strategies for contract negotiation",
+    "strategies": [
+      {
+        "strategy": "Prioritize based on business impact",
+        "guidance": "Focus negotiation efforts on clauses that pose the highest risk to your organization. Use the risk assessment scores to prioritize: SLAs and pricing are typically highest priority."
+      },
+      {
+        "strategy": "Request redlines in writing",
+        "guidance": "Always request and review vendor responses to your proposed changes in writing. Verbal commitments are not enforceable."
+      },
+      {
+        "strategy": "Benchmark against industry standards",
+        "guidance": "Reference industry-standard contract terms and competitor offerings during negotiations. Use the comparison data from multiple vendor assessments."
+      },
+      {
+        "strategy": "Bundle requests",
+        "guidance": "Present multiple requested changes together rather than one-at-a-time. This gives you negotiation flexibility and shows you've done comprehensive review."
+      },
+      {
+        "strategy": "Know your alternatives",
+        "guidance": "Have backup vendor options identified. This strengthens your negotiating position and provides genuine alternatives if negotiations fail."
+      },
+      {
+        "strategy": "Escalate strategically",
+        "guidance": "If initial vendor contact (sales, legal) won't negotiate key terms, escalate to management. Express willingness to walk away if critical issues aren't addressed."
+      },
+      {
+        "strategy": "Document everything",
+        "guidance": "Keep records of all negotiations, proposed changes, vendor responses, and final agreed terms. This protects you if disputes arise later."
+      },
+      {
+        "strategy": "Use proof of concept (POC) leverage",
+        "guidance": "Negotiate contract terms before or during POC period when vendor is most motivated to close the deal."
+      }
+    ]
+  }
+}

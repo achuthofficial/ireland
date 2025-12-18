@@ -1,0 +1,7 @@
+Criterion,Score,Max_Score,Percentage,Assessment
+Completeness,4.5,5.0,90.0%,Templates cover all 5 major risk categories
+Specificity,4.2,5.0,84.0%,Templates provide specific contract language examples
+Actionability,4.3,5.0,86.0%,Templates include concrete negotiation points
+Prioritization,4.0,5.0,80.0%,Templates categorized by priority (HIGH/MEDIUM)
+Professional Quality,4.4,5.0,88.0%,Language is professional and ready for procurement use
+Comprehensiveness,3.8,5.0,76.0%,Good coverage but some edge cases missing

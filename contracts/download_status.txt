@@ -1,0 +1,124 @@
+VENDOR CONTRACT DOWNLOAD STATUS
+Date: December 17, 2025
+Total Downloaded: 53 contracts
+
+================================================================================
+SUCCESSFULLY DOWNLOADED (53 sites)
+================================================================================
+
+1. Airtable - https://www.airtable.com/
+2. Amplitude - https://amplitude.com/
+3. Asana - https://asana.com/
+4. Atlassian - https://www.atlassian.com/
+5. AWS - https://aws.amazon.com/
+6. Bitbucket - https://bitbucket.org/
+7. Cisco - https://www.cisco.com/
+8. ClickUp - https://clickup.com/
+9. Cloudflare - https://www.cloudflare.com/
+10. Confluence - https://www.atlassian.com/software/confluence
+11. Datadog - https://www.datadoghq.com/
+12. DigitalOcean - https://www.digitalocean.com/
+13. Docker - https://www.docker.com/
+14. DocuSign - https://www.docusign.com/
+15. Dropbox - https://www.dropbox.com/
+16. Fastly - https://www.fastly.com/
+17. Fly.io - https://fly.io/
+18. GitLab - https://about.gitlab.com/
+19. Google Cloud - https://cloud.google.com/
+20. HubSpot - https://www.hubspot.com/
+21. iCloud - https://www.apple.com/icloud/
+22. Intercom - https://www.intercom.com/
+23. Jenkins - https://www.jenkins.io/
+24. Jira - https://www.atlassian.com/software/jira
+25. Mailchimp - https://mailchimp.com/
+26. Mailgun - https://www.mailgun.com/
+27. Mixpanel - https://mixpanel.com/
+28. Monday.com - https://monday.com/
+29. MongoDB - https://www.mongodb.com/
+30. Netlify - https://www.netlify.com/
+31. New Relic - https://newrelic.com/
+32. Notion - https://www.notion.so/
+33. Okta - https://www.okta.com/
+34. PagerDuty - https://www.pagerduty.com/
+35. Postmark - https://postmarkapp.com/
+36. Railway - https://railway.app/
+37. Render - https://render.com/
+38. Segment - https://segment.com/
+39. SendGrid - https://sendgrid.com/
+40. Shopify - https://www.shopify.com/
+41. Slack - https://slack.com/
+42. Splunk - https://www.splunk.com/
+43. Squarespace - https://www.squarespace.com/
+44. Stripe - https://stripe.com/
+45. Supabase - https://supabase.com/
+46. Sync.com - https://www.sync.com/
+47. Trello - https://trello.com/
+48. Twilio - https://www.twilio.com/
+49. Vercel - https://vercel.com/
+50. Wix - https://www.wix.com/
+51. WordPress - https://wordpress.com/
+52. Zendesk - https://www.zendesk.com/
+53. Zoom - https://zoom.us/
+
+================================================================================
+BLOCKED OR FAILED (Sites that returned 403/404 or blocked wget)
+================================================================================
+
+1. Adobe - https://www.adobe.com/ (403 Forbidden)
+2. Microsoft Azure - https://azure.microsoft.com/ (403 Forbidden)
+3. Microsoft Office 365 - https://www.microsoft.com/ (403 Forbidden)
+4. Salesforce/Heroku - https://www.salesforce.com/ (403 Forbidden)
+5. Box - https://www.box.com/ (403 Forbidden)
+6. OneDrive - https://www.microsoft.com/ (403 Forbidden)
+7. Basecamp - https://basecamp.com/ (403 Forbidden)
+8. Oracle Cloud - https://www.oracle.com/ (404 Not Found)
+9. IBM Cloud - https://www.ibm.com/ (403 Forbidden)
+10. SAP - https://www.sap.com/ (404 Not Found)
+11. Airtable Terms - https://www.airtable.com/company/terms-of-service (404)
+12. CircleCI - https://circleci.com/ (404 Not Found)
+13. Smartsheet - https://www.smartsheet.com/ (404 Not Found)
+14. Travis CI - https://www.travis-ci.com/ (404 Not Found)
+15. Nextcloud - https://nextcloud.com/ (404 Not Found)
+16. PlanetScale - https://planetscale.com/ (404 Not Found)
+17. Redis - https://redis.com/ (404 Not Found)
+18. Elastic - https://www.elastic.co/ (404 Not Found)
+19. Linode - https://www.linode.com/ (404 Not Found)
+20. Vultr - https://www.vultr.com/ (403 Forbidden)
+21. Auth0 - https://auth0.com/ (404 Not Found)
+22. GitHub (some URLs) - https://github.com/ (some pages blocked)
+
+================================================================================
+NOTES
+================================================================================
+
+- Total attempted: ~75 vendor sites
+- Success rate: 53/75 = 70.7%
+- Main blocking reason: 403 Forbidden (sites block wget/automated downloads)
+- Secondary reason: 404 Not Found (URL changed or incorrect)
+
+- Some vendors (Microsoft, Adobe, Oracle, SAP, IBM) actively block automated
+  tools from downloading their terms of service pages
+
+- Alternative: These contracts may need manual download through a browser or
+  using different methods (Selenium, Puppeteer, etc.)
+
+================================================================================
+HOW TO USE THESE CONTRACTS
+================================================================================
+
+To analyze a contract:
+  cd /workspaces/ireland/code
+  python assess_contract.py --file /workspaces/ireland/contracts/aws.html
+
+To analyze all contracts:
+  cd /workspaces/ireland/code
+  python assess_contract.py --directory /workspaces/ireland/contracts/
+
+To add missing contracts manually:
+  1. Open vendor website in browser
+  2. Go to Terms of Service / Terms and Conditions
+  3. Save page as HTML (Ctrl+S or Cmd+S)
+  4. Copy to /workspaces/ireland/contracts/ folder
+  5. Name it: [vendor]_contract.html
+
+================================================================================

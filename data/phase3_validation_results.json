@@ -1,0 +1,2315 @@
+{
+  "validation_date": "2025-12-17T18:11:27.936999",
+  "results": [
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/cloud_providers/microsoft_azure_legal.html",
+      "vendor_name": "Microsoft Azure Legal",
+      "status": "success",
+      "total_score": 32.5,
+      "risk_level": "LOW",
+      "total_clauses": 2,
+      "category_scores": {
+        "service_level": 3.75,
+        "pricing_terms": 3.75,
+        "termination_exit": 10.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 3,
+      "assessment": {
+        "total_score": 32.5,
+        "risk_level": "LOW",
+        "category_scores": {
+          "service_level": 3.75,
+          "pricing_terms": 3.75,
+          "termination_exit": 10.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 3.75,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 3.75,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 10.0,
+            "max_points": 20,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "termination_exit",
+            "severity": "HIGH",
+            "issue": "No termination exit clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "No support obligations clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - No termination exit clauses found in termination exit",
+          "  - No data portability clauses found in data portability",
+          "  - No support obligations clauses found in support obligations",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Termination Exit",
+          "  - Data Portability",
+          "  - Support Obligations"
+        ],
+        "score_interpretation": "Score: 32.5/100 - This contract presents relatively low lock-in risk. However, review specific clauses and negotiate improvements where possible.",
+        "vendor_name": "Microsoft Azure Legal",
+        "contract_file": "microsoft_azure_legal.html",
+        "total_clauses": 2,
+        "clauses": [
+          {
+            "clause_id": "Microsoft Azure Legal_1",
+            "vendor_name": "Microsoft Azure Legal",
+            "contract_file": "microsoft_azure_legal.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Microsoft Azure Legal Information | Microsoft Azure This is the Trace Id: 3b886939d11f842d9ac6752ff4f21427 Skip to main content Microsoft Azure Legal Information Last updated: April 2023 Service Agreement Your use of the Azure service is governed by the terms and conditions of the agreement under which you obtained the services. For customers who purchase or renew a subscription (including free trials) online from Microsoft, your use is governed by either the Microsoft Customer Agreement (\"MCA\")",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Microsoft Azure Legal_2",
+            "vendor_name": "Microsoft Azure Legal",
+            "contract_file": "microsoft_azure_legal.html",
+            "clause_category": "service_level",
+            "clause_text": "Microsoft Azure Legal Information | Microsoft Azure This is the Trace Id: 3b886939d11f842d9ac6752ff4f21427 Skip to main content Microsoft Azure Legal Information Last updated: April 2023 Service Agreement Your use of the Azure service is governed by the terms and conditions of the agreement under which you obtained the services. For customers who purchase or renew a subscription (including free trials) online from Microsoft, your use is governed by either the Microsoft Customer Agreement (\"MCA\")",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 4
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/cloud_providers/oracle_cloud_terms.html",
+      "vendor_name": "Oracle Cloud",
+      "status": "success",
+      "total_score": 44.75,
+      "risk_level": "MEDIUM",
+      "total_clauses": 1,
+      "category_scores": {
+        "service_level": 12.5,
+        "pricing_terms": 12.5,
+        "termination_exit": 10.0,
+        "data_portability": 7.5,
+        "support_obligations": 2.25
+      },
+      "critical_issues": 4,
+      "assessment": {
+        "total_score": 44.75,
+        "risk_level": "MEDIUM",
+        "category_scores": {
+          "service_level": 12.5,
+          "pricing_terms": 12.5,
+          "termination_exit": 10.0,
+          "data_portability": 7.5,
+          "support_obligations": 2.25
+        },
+        "category_details": {
+          "service_level": {
+            "score": 12.5,
+            "max_points": 25,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "pricing_terms": {
+            "score": 12.5,
+            "max_points": 25,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "termination_exit": {
+            "score": 10.0,
+            "max_points": 20,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 2.25,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "No service level clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "No pricing terms clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "termination_exit",
+            "severity": "HIGH",
+            "issue": "No termination exit clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - No service level clauses found in service level",
+          "  - No pricing terms clauses found in pricing terms",
+          "  - No termination exit clauses found in termination exit",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Service Level",
+          "  - Pricing Terms",
+          "  - Termination Exit",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 44.75/100 - This contract presents moderate lock-in risk. Several areas need negotiation to improve terms. Focus on high-risk categories first.",
+        "vendor_name": "Oracle Cloud",
+        "contract_file": "oracle_cloud_terms.html",
+        "total_clauses": 1,
+        "clauses": [
+          {
+            "clause_id": "Oracle Cloud_1",
+            "vendor_name": "Oracle Cloud",
+            "contract_file": "oracle_cloud_terms.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Transparency in our Contracts and Policies | Oracle Skip to content Accessibility Policy Close Search Search Oracle.com QUICK LINKS Oracle Cloud Infrastructure Oracle Fusion Cloud Applications Oracle Database Download Java Careers at Oracle Search Country View Accounts Back Cloud Account Sign in to Cloud Sign Up for Free Cloud Tier Oracle Account Sign-In Create an Account Help Sign Out Contact Sales Menu Menu Agreement + Order Documents + Service Policy = Contract Open all Oracle has two primary",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 2
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/cloud_providers/digitalocean_tos.html",
+      "vendor_name": "Digitalocean",
+      "status": "success",
+      "total_score": 75.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 10.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 6,
+      "assessment": {
+        "total_score": 75.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 10.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 10.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "termination_exit",
+            "severity": "HIGH",
+            "issue": "100.0% of termination exit clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - 100.0% of termination exit clauses are high-risk in termination exit",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 75.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Digitalocean",
+        "contract_file": "digitalocean_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Digitalocean_1",
+            "vendor_name": "Digitalocean",
+            "contract_file": "digitalocean_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Legal - Terms of Service AgreementTerms of Service AgreementLast Updated on November 25, 2025Introduction Welcome to DigitalOcean\u2019s Terms of Service! The first portion of our Terms of Service is an introduction, which is structured like an FAQ and lays out some high-level concepts before diving into other terms. What documents make up the TOS? We refer to the Terms of Service as the \u201cTOS\u201d This page lays out the core of our TOS, but we also have other contractual documents that you can think of a",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 7
+          },
+          {
+            "clause_id": "Digitalocean_2",
+            "vendor_name": "Digitalocean",
+            "contract_file": "digitalocean_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Legal - Terms of Service AgreementTerms of Service AgreementLast Updated on November 25, 2025Introduction Welcome to DigitalOcean\u2019s Terms of Service! The first portion of our Terms of Service is an introduction, which is structured like an FAQ and lays out some high-level concepts before diving into other terms. What documents make up the TOS? We refer to the Terms of Service as the \u201cTOS\u201d This page lays out the core of our TOS, but we also have other contractual documents that you can think of a",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_support_guarantee",
+            "keyword_matches": 6
+          },
+          {
+            "clause_id": "Digitalocean_3",
+            "vendor_name": "Digitalocean",
+            "contract_file": "digitalocean_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Legal - Terms of Service AgreementTerms of Service AgreementLast Updated on November 25, 2025Introduction Welcome to DigitalOcean\u2019s Terms of Service! The first portion of our Terms of Service is an introduction, which is structured like an FAQ and lays out some high-level concepts before diving into other terms. What documents make up the TOS? We refer to the Terms of Service as the \u201cTOS\u201d This page lays out the core of our TOS, but we also have other contractual documents that you can think of a",
+            "risk_level": "High",
+            "lock_in_mechanism": "cancellation_penalty",
+            "keyword_matches": 4
+          },
+          {
+            "clause_id": "Digitalocean_4",
+            "vendor_name": "Digitalocean",
+            "contract_file": "digitalocean_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Legal - Terms of Service AgreementTerms of Service AgreementLast Updated on November 25, 2025Introduction Welcome to DigitalOcean\u2019s Terms of Service! The first portion of our Terms of Service is an introduction, which is structured like an FAQ and lays out some high-level concepts before diving into other terms. What documents make up the TOS? We refer to the Terms of Service as the \u201cTOS\u201d This page lays out the core of our TOS, but we also have other contractual documents that you can think of a",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 8
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/cloud_providers/netlify_tos.html",
+      "vendor_name": "Netlify",
+      "status": "success",
+      "total_score": 67.5,
+      "risk_level": "HIGH",
+      "total_clauses": 2,
+      "category_scores": {
+        "service_level": 17.5,
+        "pricing_terms": 25.0,
+        "termination_exit": 10.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 6,
+      "assessment": {
+        "total_score": 67.5,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 17.5,
+          "pricing_terms": 25.0,
+          "termination_exit": 10.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 17.5,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 10.0,
+            "max_points": 20,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "termination_exit",
+            "severity": "HIGH",
+            "issue": "No termination exit clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "No support obligations clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "Contains unilateral pricing clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No termination exit clauses found in termination exit",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Service Level: 17.5/25 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Termination Exit",
+          "  - Data Portability",
+          "  - Support Obligations"
+        ],
+        "score_interpretation": "Score: 67.5/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Netlify",
+        "contract_file": "netlify_tos.html",
+        "total_clauses": 2,
+        "clauses": [
+          {
+            "clause_id": "Netlify_1",
+            "vendor_name": "Netlify",
+            "contract_file": "netlify_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Netlify Website Terms of Use | Netlify Netlify Website Terms of Use Last Updated: November 1st, 2023 By using or accessing the Netlify website (the \u201cWebsite\u201d), You agree to be bound and abide by the terms and conditions of these Terms of Use (\u201cTerms\u201d). If you do not agree to these Terms, you should not access or use the Website. Netlify\u2019s software, solutions and services (\u201cServices\u201d) offered on the Website are governed by the the Self-Serve Subscription Agreement or the Enterprise Master Subscri",
+            "risk_level": "High",
+            "lock_in_mechanism": "unilateral_pricing",
+            "keyword_matches": 3
+          },
+          {
+            "clause_id": "Netlify_2",
+            "vendor_name": "Netlify",
+            "contract_file": "netlify_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Netlify Website Terms of Use | Netlify Netlify Website Terms of Use Last Updated: November 1st, 2023 By using or accessing the Netlify website (the \u201cWebsite\u201d), You agree to be bound and abide by the terms and conditions of these Terms of Use (\u201cTerms\u201d). If you do not agree to these Terms, you should not access or use the Website. Netlify\u2019s software, solutions and services (\u201cServices\u201d) offered on the Website are governed by the the Self-Serve Subscription Agreement or the Enterprise Master Subscri",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_guarantee",
+            "keyword_matches": 5
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/cloud_providers/vercel_tos.html",
+      "vendor_name": "Vercel",
+      "status": "success",
+      "total_score": 72.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 7.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 5,
+      "assessment": {
+        "total_score": 72.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 7.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 7.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 72.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Vercel",
+        "contract_file": "vercel_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Vercel_1",
+            "vendor_name": "Vercel",
+            "contract_file": "vercel_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms of ServiceTerms of ServiceLast Updated August 19, 2025On this pageIntroductionAge and EligibilityTemporary Use LicenseYour ContentHobby PlanAcceptable UseEtiquetteSecurity and ComplianceGeneralPCI ComplianceHIPAA ComplianceData ProtectionInternational Transfers of DataUse of Your DataAggregate DataUsage RestrictionsSupportElectronic CommunicationsRepresentation and WarrantiesRepresentationsMutual WarrantyIndemnificationConfidentiality; Proprietary RightsConfidentialityCompany OwnershipFeed",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 7
+          },
+          {
+            "clause_id": "Vercel_2",
+            "vendor_name": "Vercel",
+            "contract_file": "vercel_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Terms of ServiceTerms of ServiceLast Updated August 19, 2025On this pageIntroductionAge and EligibilityTemporary Use LicenseYour ContentHobby PlanAcceptable UseEtiquetteSecurity and ComplianceGeneralPCI ComplianceHIPAA ComplianceData ProtectionInternational Transfers of DataUse of Your DataAggregate DataUsage RestrictionsSupportElectronic CommunicationsRepresentation and WarrantiesRepresentationsMutual WarrantyIndemnificationConfidentiality; Proprietary RightsConfidentialityCompany OwnershipFeed",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_support_guarantee",
+            "keyword_matches": 3
+          },
+          {
+            "clause_id": "Vercel_3",
+            "vendor_name": "Vercel",
+            "contract_file": "vercel_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms of ServiceTerms of ServiceLast Updated August 19, 2025On this pageIntroductionAge and EligibilityTemporary Use LicenseYour ContentHobby PlanAcceptable UseEtiquetteSecurity and ComplianceGeneralPCI ComplianceHIPAA ComplianceData ProtectionInternational Transfers of DataUse of Your DataAggregate DataUsage RestrictionsSupportElectronic CommunicationsRepresentation and WarrantiesRepresentationsMutual WarrantyIndemnificationConfidentiality; Proprietary RightsConfidentialityCompany OwnershipFeed",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "automatic_renewal",
+            "keyword_matches": 5
+          },
+          {
+            "clause_id": "Vercel_4",
+            "vendor_name": "Vercel",
+            "contract_file": "vercel_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms of ServiceTerms of ServiceLast Updated August 19, 2025On this pageIntroductionAge and EligibilityTemporary Use LicenseYour ContentHobby PlanAcceptable UseEtiquetteSecurity and ComplianceGeneralPCI ComplianceHIPAA ComplianceData ProtectionInternational Transfers of DataUse of Your DataAggregate DataUsage RestrictionsSupportElectronic CommunicationsRepresentation and WarrantiesRepresentationsMutual WarrantyIndemnificationConfidentiality; Proprietary RightsConfidentialityCompany OwnershipFeed",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 7
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/dropbox_tos.html",
+      "vendor_name": "Dropbox",
+      "status": "success",
+      "total_score": 71.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 3.0,
+        "data_portability": 7.5,
+        "support_obligations": 10.5
+      },
+      "critical_issues": 5,
+      "assessment": {
+        "total_score": 71.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 3.0,
+          "data_portability": 7.5,
+          "support_obligations": 10.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 3.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 10.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Support Obligations: 10.5/15 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 71.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Dropbox",
+        "contract_file": "dropbox_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Dropbox_1",
+            "vendor_name": "Dropbox",
+            "contract_file": "dropbox_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms of Service - Dropbox Skip to main contentFor users with a separate DocSend or Dropbox Sign account, the DocSend Terms of Service can be found here, and the Dropbox Sign Terms of Service can be found here. Dropbox Terms of Service Posted: January 7, 2025 Effective: January 7, 2025 You can see your previous Terms\u00a0here. Thanks for using Dropbox!\u00a0Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 5
+          },
+          {
+            "clause_id": "Dropbox_2",
+            "vendor_name": "Dropbox",
+            "contract_file": "dropbox_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Terms of Service - Dropbox Skip to main contentFor users with a separate DocSend or Dropbox Sign account, the DocSend Terms of Service can be found here, and the Dropbox Sign Terms of Service can be found here. Dropbox Terms of Service Posted: January 7, 2025 Effective: January 7, 2025 You can see your previous Terms\u00a0here. Thanks for using Dropbox!\u00a0Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive",
+            "risk_level": "High",
+            "lock_in_mechanism": "discontinuation_risk",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Dropbox_3",
+            "vendor_name": "Dropbox",
+            "contract_file": "dropbox_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms of Service - Dropbox Skip to main contentFor users with a separate DocSend or Dropbox Sign account, the DocSend Terms of Service can be found here, and the Dropbox Sign Terms of Service can be found here. Dropbox Terms of Service Posted: January 7, 2025 Effective: January 7, 2025 You can see your previous Terms\u00a0here. Thanks for using Dropbox!\u00a0Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 7
+          },
+          {
+            "clause_id": "Dropbox_4",
+            "vendor_name": "Dropbox",
+            "contract_file": "dropbox_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms of Service - Dropbox Skip to main contentFor users with a separate DocSend or Dropbox Sign account, the DocSend Terms of Service can be found here, and the Dropbox Sign Terms of Service can be found here. Dropbox Terms of Service Posted: January 7, 2025 Effective: January 7, 2025 You can see your previous Terms\u00a0here. Thanks for using Dropbox!\u00a0Our mission is to create a more enlightened way of working, and help you and those you work with stay coordinated. We do so by providing an intuitive",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 2
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/trello_tos.html",
+      "vendor_name": "Trello",
+      "status": "success",
+      "total_score": 50.25,
+      "risk_level": "MEDIUM",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 12.5,
+        "pricing_terms": 25.0,
+        "termination_exit": 3.0,
+        "data_portability": 7.5,
+        "support_obligations": 2.25
+      },
+      "critical_issues": 3,
+      "assessment": {
+        "total_score": 50.25,
+        "risk_level": "MEDIUM",
+        "category_scores": {
+          "service_level": 12.5,
+          "pricing_terms": 25.0,
+          "termination_exit": 3.0,
+          "data_portability": 7.5,
+          "support_obligations": 2.25
+        },
+        "category_details": {
+          "service_level": {
+            "score": 12.5,
+            "max_points": 25,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 3.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "support_obligations": {
+            "score": 2.25,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "No service level clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "Contains data restriction clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - No service level clauses found in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - Contains data restriction clause in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Pricing Terms: 25.0/25 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Service Level"
+        ],
+        "score_interpretation": "Score: 50.25/100 - This contract presents moderate lock-in risk. Several areas need negotiation to improve terms. Focus on high-risk categories first.",
+        "vendor_name": "Trello",
+        "contract_file": "trello_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Trello_1",
+            "vendor_name": "Trello",
+            "contract_file": "trello_tos.html",
+            "clause_category": "data_portability",
+            "clause_text": "Privacy Policy | Atlassian Close View this page in your language? All languages Choose your language \u4e2d\u6587 Deutsch English Espa\u00f1ol Fran\u00e7ais Italiano \ud55c\uad6d\uc5b4 Nederlands \u65e5\u672c\u8a9e Portugu\u00eas P\u0443\u0441\u0441\u043a\u0438\u0439 Polski Legal information Privacy Policy Privacy Policy Privacy Policy Effective starting: October 7, 2025 Your privacy matters to us. This privacy policy explains how Atlassian Pty Ltd, Atlassian US, Inc. and our corporate affiliates (\u201cAtlassian\u201d, \u201cwe\u201d, \u201cus\u201d, \u201cour\u201d) collect, use, share, and protect your information ",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "data_restriction",
+            "keyword_matches": 3
+          },
+          {
+            "clause_id": "Trello_2",
+            "vendor_name": "Trello",
+            "contract_file": "trello_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Privacy Policy | Atlassian Close View this page in your language? All languages Choose your language \u4e2d\u6587 Deutsch English Espa\u00f1ol Fran\u00e7ais Italiano \ud55c\uad6d\uc5b4 Nederlands \u65e5\u672c\u8a9e Portugu\u00eas P\u0443\u0441\u0441\u043a\u0438\u0439 Polski Legal information Privacy Policy Privacy Policy Privacy Policy Effective starting: October 7, 2025 Your privacy matters to us. This privacy policy explains how Atlassian Pty Ltd, Atlassian US, Inc. and our corporate affiliates (\u201cAtlassian\u201d, \u201cwe\u201d, \u201cus\u201d, \u201cour\u201d) collect, use, share, and protect your information ",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 4
+          },
+          {
+            "clause_id": "Trello_3",
+            "vendor_name": "Trello",
+            "contract_file": "trello_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Privacy Policy | Atlassian Close View this page in your language? All languages Choose your language \u4e2d\u6587 Deutsch English Espa\u00f1ol Fran\u00e7ais Italiano \ud55c\uad6d\uc5b4 Nederlands \u65e5\u672c\u8a9e Portugu\u00eas P\u0443\u0441\u0441\u043a\u0438\u0439 Polski Legal information Privacy Policy Privacy Policy Privacy Policy Effective starting: October 7, 2025 Your privacy matters to us. This privacy policy explains how Atlassian Pty Ltd, Atlassian US, Inc. and our corporate affiliates (\u201cAtlassian\u201d, \u201cwe\u201d, \u201cus\u201d, \u201cour\u201d) collect, use, share, and protect your information ",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 5
+          },
+          {
+            "clause_id": "Trello_4",
+            "vendor_name": "Trello",
+            "contract_file": "trello_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Privacy Policy | Atlassian Close View this page in your language? All languages Choose your language \u4e2d\u6587 Deutsch English Espa\u00f1ol Fran\u00e7ais Italiano \ud55c\uad6d\uc5b4 Nederlands \u65e5\u672c\u8a9e Portugu\u00eas P\u0443\u0441\u0441\u043a\u0438\u0439 Polski Legal information Privacy Policy Privacy Policy Privacy Policy Effective starting: October 7, 2025 Your privacy matters to us. This privacy policy explains how Atlassian Pty Ltd, Atlassian US, Inc. and our corporate affiliates (\u201cAtlassian\u201d, \u201cwe\u201d, \u201cus\u201d, \u201cour\u201d) collect, use, share, and protect your information ",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 2
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/miro_tos.html",
+      "vendor_name": "Miro",
+      "status": "success",
+      "total_score": 71.0,
+      "risk_level": "HIGH",
+      "total_clauses": 5,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 3.0,
+        "data_portability": 7.5,
+        "support_obligations": 10.5
+      },
+      "critical_issues": 5,
+      "assessment": {
+        "total_score": 71.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 3.0,
+          "data_portability": 7.5,
+          "support_obligations": 10.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 3.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "support_obligations": {
+            "score": 10.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "Contains data restriction clause",
+            "impact": "Critical lock-in mechanism identified"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - 100.0% of support obligations clauses are high-risk in support obligations",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Support Obligations: 10.5/15 points"
+        ],
+        "score_interpretation": "Score: 71.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Miro",
+        "contract_file": "miro_tos.html",
+        "total_clauses": 5,
+        "clauses": [
+          {
+            "clause_id": "Miro_1",
+            "vendor_name": "Miro",
+            "contract_file": "miro_tos.html",
+            "clause_category": "data_portability",
+            "clause_text": "Terms of ServiceMiro legal informationTable of contentsTable of contentsAI TermsCode of ConductCookies PolicyCustomer Data Processing AddendumCurrent Subprocessors ListDeveloper Terms of UseMaster Cloud AgreementMiro ImprintMiro Marketplace Terms of UseMiro Master Cloud Agreement GuideOnline Community Terms of UseOpen Source Software - ClientOpen Source Software - SitePrior Master Cloud Agreement \"MCA\" VersionsPrivacy PolicyRecruitment Privacy PolicyTerms of ServiceDMCA PolicySolutions Partner P",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "data_restriction",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Miro_2",
+            "vendor_name": "Miro",
+            "contract_file": "miro_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms of ServiceMiro legal informationTable of contentsTable of contentsAI TermsCode of ConductCookies PolicyCustomer Data Processing AddendumCurrent Subprocessors ListDeveloper Terms of UseMaster Cloud AgreementMiro ImprintMiro Marketplace Terms of UseMiro Master Cloud Agreement GuideOnline Community Terms of UseOpen Source Software - ClientOpen Source Software - SitePrior Master Cloud Agreement \"MCA\" VersionsPrivacy PolicyRecruitment Privacy PolicyTerms of ServiceDMCA PolicySolutions Partner P",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 7
+          },
+          {
+            "clause_id": "Miro_3",
+            "vendor_name": "Miro",
+            "contract_file": "miro_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Terms of ServiceMiro legal informationTable of contentsTable of contentsAI TermsCode of ConductCookies PolicyCustomer Data Processing AddendumCurrent Subprocessors ListDeveloper Terms of UseMaster Cloud AgreementMiro ImprintMiro Marketplace Terms of UseMiro Master Cloud Agreement GuideOnline Community Terms of UseOpen Source Software - ClientOpen Source Software - SitePrior Master Cloud Agreement \"MCA\" VersionsPrivacy PolicyRecruitment Privacy PolicyTerms of ServiceDMCA PolicySolutions Partner P",
+            "risk_level": "High",
+            "lock_in_mechanism": "discontinuation_risk",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Miro_4",
+            "vendor_name": "Miro",
+            "contract_file": "miro_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms of ServiceMiro legal informationTable of contentsTable of contentsAI TermsCode of ConductCookies PolicyCustomer Data Processing AddendumCurrent Subprocessors ListDeveloper Terms of UseMaster Cloud AgreementMiro ImprintMiro Marketplace Terms of UseMiro Master Cloud Agreement GuideOnline Community Terms of UseOpen Source Software - ClientOpen Source Software - SitePrior Master Cloud Agreement \"MCA\" VersionsPrivacy PolicyRecruitment Privacy PolicyTerms of ServiceDMCA PolicySolutions Partner P",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 4
+          },
+          {
+            "clause_id": "Miro_5",
+            "vendor_name": "Miro",
+            "contract_file": "miro_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms of ServiceMiro legal informationTable of contentsTable of contentsAI TermsCode of ConductCookies PolicyCustomer Data Processing AddendumCurrent Subprocessors ListDeveloper Terms of UseMaster Cloud AgreementMiro ImprintMiro Marketplace Terms of UseMiro Master Cloud Agreement GuideOnline Community Terms of UseOpen Source Software - ClientOpen Source Software - SitePrior Master Cloud Agreement \"MCA\" VersionsPrivacy PolicyRecruitment Privacy PolicyTerms of ServiceDMCA PolicySolutions Partner P",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 7
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/zendesk_tos.html",
+      "vendor_name": "Zendesk",
+      "status": "success",
+      "total_score": 67.5,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 17.5,
+        "pricing_terms": 25.0,
+        "termination_exit": 7.0,
+        "data_portability": 7.5,
+        "support_obligations": 10.5
+      },
+      "critical_issues": 4,
+      "assessment": {
+        "total_score": 67.5,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 17.5,
+          "pricing_terms": 25.0,
+          "termination_exit": 7.0,
+          "data_portability": 7.5,
+          "support_obligations": 10.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 17.5,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 7.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 10.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Service Level: 17.5/25 points",
+          "  - Support Obligations: 10.5/15 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 67.5/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Zendesk",
+        "contract_file": "zendesk_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Zendesk_1",
+            "vendor_name": "Zendesk",
+            "contract_file": "zendesk_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Zendesk Customer AgreementSkip to main contentAgreements and TermsPolicies and GuidelinesTrademarks and Intellectual PropertyProcurement and SuppliersData Protection and PrivacyAgreements and TermsCustomer Agreements and User Terms for Products and ServicesZendesk Customer AgreementRegion-Specific TermsProfessional Services TermsHow We Protect Your Service Data (Enterprise Services)How We Protect Your Service Data (Innovation Services)Innovation Services ListZendesk Developer TermsMarketplace Te",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 8
+          },
+          {
+            "clause_id": "Zendesk_2",
+            "vendor_name": "Zendesk",
+            "contract_file": "zendesk_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Zendesk Customer AgreementSkip to main contentAgreements and TermsPolicies and GuidelinesTrademarks and Intellectual PropertyProcurement and SuppliersData Protection and PrivacyAgreements and TermsCustomer Agreements and User Terms for Products and ServicesZendesk Customer AgreementRegion-Specific TermsProfessional Services TermsHow We Protect Your Service Data (Enterprise Services)How We Protect Your Service Data (Innovation Services)Innovation Services ListZendesk Developer TermsMarketplace Te",
+            "risk_level": "High",
+            "lock_in_mechanism": "discontinuation_risk",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Zendesk_3",
+            "vendor_name": "Zendesk",
+            "contract_file": "zendesk_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Zendesk Customer AgreementSkip to main contentAgreements and TermsPolicies and GuidelinesTrademarks and Intellectual PropertyProcurement and SuppliersData Protection and PrivacyAgreements and TermsCustomer Agreements and User Terms for Products and ServicesZendesk Customer AgreementRegion-Specific TermsProfessional Services TermsHow We Protect Your Service Data (Enterprise Services)How We Protect Your Service Data (Innovation Services)Innovation Services ListZendesk Developer TermsMarketplace Te",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "automatic_renewal",
+            "keyword_matches": 6
+          },
+          {
+            "clause_id": "Zendesk_4",
+            "vendor_name": "Zendesk",
+            "contract_file": "zendesk_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Zendesk Customer AgreementSkip to main contentAgreements and TermsPolicies and GuidelinesTrademarks and Intellectual PropertyProcurement and SuppliersData Protection and PrivacyAgreements and TermsCustomer Agreements and User Terms for Products and ServicesZendesk Customer AgreementRegion-Specific TermsProfessional Services TermsHow We Protect Your Service Data (Enterprise Services)How We Protect Your Service Data (Innovation Services)Innovation Services ListZendesk Developer TermsMarketplace Te",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_guarantee",
+            "keyword_matches": 7
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/twilio_tos.html",
+      "vendor_name": "Twilio",
+      "status": "success",
+      "total_score": 71.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 3.0,
+        "data_portability": 7.5,
+        "support_obligations": 10.5
+      },
+      "critical_issues": 5,
+      "assessment": {
+        "total_score": 71.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 3.0,
+          "data_portability": 7.5,
+          "support_obligations": 10.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 3.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 10.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Support Obligations: 10.5/15 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 71.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Twilio",
+        "contract_file": "twilio_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Twilio_1",
+            "vendor_name": "Twilio",
+            "contract_file": "twilio_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Twilio Terms of Service | Twilio Print this page Customer and Partner Agreements Terms of Service Acceptable Use Policy Service and Country Specific Requirements Data Protection Addendum (DPA) Security Overview Service Level Agreements Advisory Services Terms Professional Services Terms Twilio Marketplace Terms Twilio Segment Customer Data Platform Destination Integration and Listing Terms AI/ML Terms Customer Name Changes and Assignments Updates to Legal Terms and Conditions Country Specific Di",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 8
+          },
+          {
+            "clause_id": "Twilio_2",
+            "vendor_name": "Twilio",
+            "contract_file": "twilio_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Twilio Terms of Service | Twilio Print this page Customer and Partner Agreements Terms of Service Acceptable Use Policy Service and Country Specific Requirements Data Protection Addendum (DPA) Security Overview Service Level Agreements Advisory Services Terms Professional Services Terms Twilio Marketplace Terms Twilio Segment Customer Data Platform Destination Integration and Listing Terms AI/ML Terms Customer Name Changes and Assignments Updates to Legal Terms and Conditions Country Specific Di",
+            "risk_level": "High",
+            "lock_in_mechanism": "discontinuation_risk",
+            "keyword_matches": 5
+          },
+          {
+            "clause_id": "Twilio_3",
+            "vendor_name": "Twilio",
+            "contract_file": "twilio_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Twilio Terms of Service | Twilio Print this page Customer and Partner Agreements Terms of Service Acceptable Use Policy Service and Country Specific Requirements Data Protection Addendum (DPA) Security Overview Service Level Agreements Advisory Services Terms Professional Services Terms Twilio Marketplace Terms Twilio Segment Customer Data Platform Destination Integration and Listing Terms AI/ML Terms Customer Name Changes and Assignments Updates to Legal Terms and Conditions Country Specific Di",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 4
+          },
+          {
+            "clause_id": "Twilio_4",
+            "vendor_name": "Twilio",
+            "contract_file": "twilio_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Twilio Terms of Service | Twilio Print this page Customer and Partner Agreements Terms of Service Acceptable Use Policy Service and Country Specific Requirements Data Protection Addendum (DPA) Security Overview Service Level Agreements Advisory Services Terms Professional Services Terms Twilio Marketplace Terms Twilio Segment Customer Data Platform Destination Integration and Listing Terms AI/ML Terms Customer Name Changes and Assignments Updates to Legal Terms and Conditions Country Specific Di",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 7
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/intercom_tos.html",
+      "vendor_name": "Intercom",
+      "status": "success",
+      "total_score": 75.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 7.0,
+        "data_portability": 7.5,
+        "support_obligations": 10.5
+      },
+      "critical_issues": 5,
+      "assessment": {
+        "total_score": 75.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 7.0,
+          "data_portability": 7.5,
+          "support_obligations": 10.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 7.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 10.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Support Obligations: 10.5/15 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 75.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Intercom",
+        "contract_file": "intercom_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Intercom_1",
+            "vendor_name": "Intercom",
+            "contract_file": "intercom_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms and Policies | IntercomblankblankblankblankblankSkip to contentTerms & PoliciesTerms of ServiceTerms of ServiceIntercom Additional Product TermsPrivacy PolicyData Processing AddendumProduct Privacy NoticeIntercom Regional Data Hosting AddendumSupport PolicyProfessional Services TermsCookie PolicySecurity PolicySubprocessors ListData Privacy Framework NoticeIntercom Website Terms of UseAcademy TermsService Level AgreementAcceptable Use PolicyCode of ConductTrademark UsageIntercom Global Ant",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 9
+          },
+          {
+            "clause_id": "Intercom_2",
+            "vendor_name": "Intercom",
+            "contract_file": "intercom_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Terms and Policies | IntercomblankblankblankblankblankSkip to contentTerms & PoliciesTerms of ServiceTerms of ServiceIntercom Additional Product TermsPrivacy PolicyData Processing AddendumProduct Privacy NoticeIntercom Regional Data Hosting AddendumSupport PolicyProfessional Services TermsCookie PolicySecurity PolicySubprocessors ListData Privacy Framework NoticeIntercom Website Terms of UseAcademy TermsService Level AgreementAcceptable Use PolicyCode of ConductTrademark UsageIntercom Global Ant",
+            "risk_level": "High",
+            "lock_in_mechanism": "discontinuation_risk",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Intercom_3",
+            "vendor_name": "Intercom",
+            "contract_file": "intercom_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms and Policies | IntercomblankblankblankblankblankSkip to contentTerms & PoliciesTerms of ServiceTerms of ServiceIntercom Additional Product TermsPrivacy PolicyData Processing AddendumProduct Privacy NoticeIntercom Regional Data Hosting AddendumSupport PolicyProfessional Services TermsCookie PolicySecurity PolicySubprocessors ListData Privacy Framework NoticeIntercom Website Terms of UseAcademy TermsService Level AgreementAcceptable Use PolicyCode of ConductTrademark UsageIntercom Global Ant",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "automatic_renewal",
+            "keyword_matches": 5
+          },
+          {
+            "clause_id": "Intercom_4",
+            "vendor_name": "Intercom",
+            "contract_file": "intercom_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms and Policies | IntercomblankblankblankblankblankSkip to contentTerms & PoliciesTerms of ServiceTerms of ServiceIntercom Additional Product TermsPrivacy PolicyData Processing AddendumProduct Privacy NoticeIntercom Regional Data Hosting AddendumSupport PolicyProfessional Services TermsCookie PolicySecurity PolicySubprocessors ListData Privacy Framework NoticeIntercom Website Terms of UseAcademy TermsService Level AgreementAcceptable Use PolicyCode of ConductTrademark UsageIntercom Global Ant",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 7
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/saas_providers/webflow_tos.html",
+      "vendor_name": "Webflow",
+      "status": "success",
+      "total_score": 79.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 14.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 6,
+      "assessment": {
+        "total_score": 79.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 14.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 14.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "termination_exit",
+            "severity": "HIGH",
+            "issue": "100.0% of termination exit clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - 100.0% of termination exit clauses are high-risk in termination exit",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Termination Exit: 14.0/20 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 79.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Webflow",
+        "contract_file": "webflow_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Webflow_1",
+            "vendor_name": "Webflow",
+            "contract_file": "webflow_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms | Webflow Skip to Main Content Webflow Log inContact SalesContact SalesContact SalesStart for free Trusted by teams atTerms and AgreementsTerms of ServiceProduct TermsBeta TermsWebflow Labs TermsData Processing AddendumCreator AgreementPrivacy ResourcesGlobal Privacy PolicyEU & Swiss Privacy PolicyCookie PolicyCCPA NoticeSubprocessorsPrivacy FAQsPoliciesAcceptable Use PolicyIntellectual Property PolicyTrademark Usage PolicyTerms of ServiceEffective date: November 15, 2023Last modified date",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 9
+          },
+          {
+            "clause_id": "Webflow_2",
+            "vendor_name": "Webflow",
+            "contract_file": "webflow_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Terms | Webflow Skip to Main Content Webflow Log inContact SalesContact SalesContact SalesStart for free Trusted by teams atTerms and AgreementsTerms of ServiceProduct TermsBeta TermsWebflow Labs TermsData Processing AddendumCreator AgreementPrivacy ResourcesGlobal Privacy PolicyEU & Swiss Privacy PolicyCookie PolicyCCPA NoticeSubprocessorsPrivacy FAQsPoliciesAcceptable Use PolicyIntellectual Property PolicyTrademark Usage PolicyTerms of ServiceEffective date: November 15, 2023Last modified date",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_support_guarantee",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Webflow_3",
+            "vendor_name": "Webflow",
+            "contract_file": "webflow_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms | Webflow Skip to Main Content Webflow Log inContact SalesContact SalesContact SalesStart for free Trusted by teams atTerms and AgreementsTerms of ServiceProduct TermsBeta TermsWebflow Labs TermsData Processing AddendumCreator AgreementPrivacy ResourcesGlobal Privacy PolicyEU & Swiss Privacy PolicyCookie PolicyCCPA NoticeSubprocessorsPrivacy FAQsPoliciesAcceptable Use PolicyIntellectual Property PolicyTrademark Usage PolicyTerms of ServiceEffective date: November 15, 2023Last modified date",
+            "risk_level": "High",
+            "lock_in_mechanism": "automatic_renewal",
+            "keyword_matches": 5
+          },
+          {
+            "clause_id": "Webflow_4",
+            "vendor_name": "Webflow",
+            "contract_file": "webflow_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms | Webflow Skip to Main Content Webflow Log inContact SalesContact SalesContact SalesStart for free Trusted by teams atTerms and AgreementsTerms of ServiceProduct TermsBeta TermsWebflow Labs TermsData Processing AddendumCreator AgreementPrivacy ResourcesGlobal Privacy PolicyEU & Swiss Privacy PolicyCookie PolicyCCPA NoticeSubprocessorsPrivacy FAQsPoliciesAcceptable Use PolicyIntellectual Property PolicyTrademark Usage PolicyTerms of ServiceEffective date: November 15, 2023Last modified date",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 8
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/enterprise_software/workday_tos.html",
+      "vendor_name": "Workday",
+      "status": "success",
+      "total_score": 41.25,
+      "risk_level": "MEDIUM",
+      "total_clauses": 1,
+      "category_scores": {
+        "service_level": 3.75,
+        "pricing_terms": 12.5,
+        "termination_exit": 10.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 4,
+      "assessment": {
+        "total_score": 41.25,
+        "risk_level": "MEDIUM",
+        "category_scores": {
+          "service_level": 3.75,
+          "pricing_terms": 12.5,
+          "termination_exit": 10.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 3.75,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 12.5,
+            "max_points": 25,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "termination_exit": {
+            "score": 10.0,
+            "max_points": 20,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "No pricing terms clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "termination_exit",
+            "severity": "HIGH",
+            "issue": "No termination exit clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "No support obligations clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - No pricing terms clauses found in pricing terms",
+          "  - No termination exit clauses found in termination exit",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Pricing Terms",
+          "  - Termination Exit",
+          "  - Data Portability",
+          "  - Support Obligations"
+        ],
+        "score_interpretation": "Score: 41.25/100 - This contract presents moderate lock-in risk. Several areas need negotiation to improve terms. Focus on high-risk categories first.",
+        "vendor_name": "Workday",
+        "contract_file": "workday_tos.html",
+        "total_clauses": 1,
+        "clauses": [
+          {
+            "clause_id": "Workday_1",
+            "vendor_name": "Workday",
+            "contract_file": "workday_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Legal Overview Guidelines | Workday US Continue Skip to main content LEGAL Looking for legal info? You\u2019re in the right place. Explore our terms and conditions, legal resources, policies, guidelines, perspectives on trust and compliance, and more. Terms and Conditions Explore our standard terms. Customer Terms Workday Website Terms Workday Purchase Order Terms Safe Harbor Statement Privacy Learn about our commitment to privacy. Processor Resources Universal Data Protection Exhibit and FAQ Binding",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 2
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/enterprise_software/okta_tos.html",
+      "vendor_name": "Okta",
+      "status": "success",
+      "total_score": 68.0,
+      "risk_level": "HIGH",
+      "total_clauses": 4,
+      "category_scores": {
+        "service_level": 25.0,
+        "pricing_terms": 25.0,
+        "termination_exit": 3.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 5,
+      "assessment": {
+        "total_score": 68.0,
+        "risk_level": "HIGH",
+        "category_scores": {
+          "service_level": 25.0,
+          "pricing_terms": 25.0,
+          "termination_exit": 3.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 3.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "100.0% of support obligations clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "Contains no compensation clause",
+            "impact": "Critical lock-in mechanism identified"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Service Level: 25.0/25 points",
+          "  - Pricing Terms: 25.0/25 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability"
+        ],
+        "score_interpretation": "Score: 68.0/100 - WARNING: This contract presents significant lock-in risk. Strongly recommend negotiating better terms or considering alternative vendors. Multiple critical issues identified.",
+        "vendor_name": "Okta",
+        "contract_file": "okta_tos.html",
+        "total_clauses": 4,
+        "clauses": [
+          {
+            "clause_id": "Okta_1",
+            "vendor_name": "Okta",
+            "contract_file": "okta_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms of Service | Okta Skip to content Terms of Service Last Updated Date: September 29, 2022 03 June 2025 Time to read: ~ Table of Contents Share Please read these Website Terms of Service (\u201cTerms\u201d) carefully before using any website and any services made available via such website(s) (collectively, the \u201cSite\u201d) owned or operated by Okta, Inc. and or its affiliate(s) (collectively, \u201cOkta\u201d). These Terms govern your use of the Site that links to these Terms. By accessing, using, downloading, or l",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 3
+          },
+          {
+            "clause_id": "Okta_2",
+            "vendor_name": "Okta",
+            "contract_file": "okta_tos.html",
+            "clause_category": "support_obligations",
+            "clause_text": "Terms of Service | Okta Skip to content Terms of Service Last Updated Date: September 29, 2022 03 June 2025 Time to read: ~ Table of Contents Share Please read these Website Terms of Service (\u201cTerms\u201d) carefully before using any website and any services made available via such website(s) (collectively, the \u201cSite\u201d) owned or operated by Okta, Inc. and or its affiliate(s) (collectively, \u201cOkta\u201d). These Terms govern your use of the Site that links to these Terms. By accessing, using, downloading, or l",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_support_guarantee",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Okta_3",
+            "vendor_name": "Okta",
+            "contract_file": "okta_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms of Service | Okta Skip to content Terms of Service Last Updated Date: September 29, 2022 03 June 2025 Time to read: ~ Table of Contents Share Please read these Website Terms of Service (\u201cTerms\u201d) carefully before using any website and any services made available via such website(s) (collectively, the \u201cSite\u201d) owned or operated by Okta, Inc. and or its affiliate(s) (collectively, \u201cOkta\u201d). These Terms govern your use of the Site that links to these Terms. By accessing, using, downloading, or l",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 2
+          },
+          {
+            "clause_id": "Okta_4",
+            "vendor_name": "Okta",
+            "contract_file": "okta_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms of Service | Okta Skip to content Terms of Service Last Updated Date: September 29, 2022 03 June 2025 Time to read: ~ Table of Contents Share Please read these Website Terms of Service (\u201cTerms\u201d) carefully before using any website and any services made available via such website(s) (collectively, the \u201cSite\u201d) owned or operated by Okta, Inc. and or its affiliate(s) (collectively, \u201cOkta\u201d). These Terms govern your use of the Site that links to these Terms. By accessing, using, downloading, or l",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_compensation",
+            "keyword_matches": 3
+          }
+        ]
+      }
+    },
+    {
+      "contract_path": "/workspaces/ireland/vendor_contracts_dataset/enterprise_software/sumologic_tos.html",
+      "vendor_name": "Sumologic",
+      "status": "success",
+      "total_score": 60.5,
+      "risk_level": "MEDIUM",
+      "total_clauses": 3,
+      "category_scores": {
+        "service_level": 17.5,
+        "pricing_terms": 25.0,
+        "termination_exit": 3.0,
+        "data_portability": 7.5,
+        "support_obligations": 7.5
+      },
+      "critical_issues": 4,
+      "assessment": {
+        "total_score": 60.5,
+        "risk_level": "MEDIUM",
+        "category_scores": {
+          "service_level": 17.5,
+          "pricing_terms": 25.0,
+          "termination_exit": 3.0,
+          "data_portability": 7.5,
+          "support_obligations": 7.5
+        },
+        "category_details": {
+          "service_level": {
+            "score": 17.5,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "pricing_terms": {
+            "score": 25.0,
+            "max_points": 25,
+            "clause_count": 1,
+            "high_risk_count": 1,
+            "high_risk_percentage": 100.0,
+            "missing_coverage": false
+          },
+          "termination_exit": {
+            "score": 3.0,
+            "max_points": 20,
+            "clause_count": 1,
+            "high_risk_count": 0,
+            "high_risk_percentage": 0.0,
+            "missing_coverage": false
+          },
+          "data_portability": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          },
+          "support_obligations": {
+            "score": 7.5,
+            "max_points": 15,
+            "clause_count": 0,
+            "high_risk_count": 0,
+            "missing_coverage": true,
+            "penalty_reason": "No clauses found in this category"
+          }
+        },
+        "critical_issues": [
+          {
+            "category": "service_level",
+            "severity": "HIGH",
+            "issue": "100.0% of service level clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "pricing_terms",
+            "severity": "HIGH",
+            "issue": "100.0% of pricing terms clauses are high-risk",
+            "impact": "Significant lock-in risk in this category"
+          },
+          {
+            "category": "data_portability",
+            "severity": "HIGH",
+            "issue": "No data portability clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          },
+          {
+            "category": "support_obligations",
+            "severity": "HIGH",
+            "issue": "No support obligations clauses found",
+            "impact": "Critical contractual gap - no protection in this area"
+          }
+        ],
+        "recommendations": [
+          "PRIORITY 1: Address the following critical issues before signing:",
+          "  - 100.0% of service level clauses are high-risk in service level",
+          "  - 100.0% of pricing terms clauses are high-risk in pricing terms",
+          "  - No data portability clauses found in data portability",
+          "\nPRIORITY 2: Negotiate improvements in these areas:",
+          "  - Pricing Terms: 25.0/25 points",
+          "  - Service Level: 17.5/25 points",
+          "\nPRIORITY 3: Request explicit provisions for:",
+          "  - Data Portability",
+          "  - Support Obligations"
+        ],
+        "score_interpretation": "Score: 60.5/100 - This contract presents moderate lock-in risk. Several areas need negotiation to improve terms. Focus on high-risk categories first.",
+        "vendor_name": "Sumologic",
+        "contract_file": "sumologic_tos.html",
+        "total_clauses": 3,
+        "clauses": [
+          {
+            "clause_id": "Sumologic_1",
+            "vendor_name": "Sumologic",
+            "contract_file": "sumologic_tos.html",
+            "clause_category": "pricing_terms",
+            "clause_text": "Terms of use Support Deutsch \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4 Login Get started Schedule Book a live demo Schedule a demo with a Sumo Logic expert. Watch Recorded demo Watch a pre-recorded demo at your own pace. Click Interactive product tours Explore our clickable demos. Talk Contact sales Discuss how Sumo Logic fits your needs. Try 30-day free trial Trial the platform and access pre-built dashboards. Products Solutions Pricing Docs Learn About Login Free trial Support Get Started Dojo AI New Multi-agent AI platform Th",
+            "risk_level": "High",
+            "lock_in_mechanism": "price_increase_risk",
+            "keyword_matches": 4
+          },
+          {
+            "clause_id": "Sumologic_2",
+            "vendor_name": "Sumologic",
+            "contract_file": "sumologic_tos.html",
+            "clause_category": "termination_exit",
+            "clause_text": "Terms of use Support Deutsch \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4 Login Get started Schedule Book a live demo Schedule a demo with a Sumo Logic expert. Watch Recorded demo Watch a pre-recorded demo at your own pace. Click Interactive product tours Explore our clickable demos. Talk Contact sales Discuss how Sumo Logic fits your needs. Try 30-day free trial Trial the platform and access pre-built dashboards. Products Solutions Pricing Docs Learn About Login Free trial Support Get Started Dojo AI New Multi-agent AI platform Th",
+            "risk_level": "Medium",
+            "lock_in_mechanism": "standard",
+            "keyword_matches": 3
+          },
+          {
+            "clause_id": "Sumologic_3",
+            "vendor_name": "Sumologic",
+            "contract_file": "sumologic_tos.html",
+            "clause_category": "service_level",
+            "clause_text": "Terms of use Support Deutsch \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4 Login Get started Schedule Book a live demo Schedule a demo with a Sumo Logic expert. Watch Recorded demo Watch a pre-recorded demo at your own pace. Click Interactive product tours Explore our clickable demos. Talk Contact sales Discuss how Sumo Logic fits your needs. Try 30-day free trial Trial the platform and access pre-built dashboards. Products Solutions Pricing Docs Learn About Login Free trial Support Get Started Dojo AI New Multi-agent AI platform Th",
+            "risk_level": "High",
+            "lock_in_mechanism": "no_guarantee",
+            "keyword_matches": 6
+          }
+        ]
+      }
+    }
+  ],
+  "statistics": {
+    "total_contracts_tested": 15,
+    "successful_assessments": 15,
+    "failed_assessments": 0,
+    "success_rate": 100.0,
+    "risk_scores": {
+      "mean": 63.083333333333336,
+      "median": 68.0,
+      "min": 32.5,
+      "max": 79.0,
+      "std_dev": 14.11074396472756
+    },
+    "risk_distribution": {
+      "LOW": 1,
+      "MEDIUM": 4,
+      "HIGH": 10
+    },
+    "risk_percentages": {
+      "low": 6.666666666666667,
+      "medium": 26.666666666666668,
+      "high": 66.66666666666666
+    },
+    "clause_statistics": {
+      "mean": 3.3333333333333335,
+      "min": 1,
+      "max": 5,
+      "total": 50
+    },
+    "category_statistics": {
+      "service_level": {
+        "mean": 19.0,
+        "min": 3.75,
+        "max": 25.0,
+        "std_dev": 7.766112283504533
+      },
+      "pricing_terms": {
+        "mean": 21.916666666666668,
+        "min": 3.75,
+        "max": 25.0,
+        "std_dev": 6.662573147994771
+      },
+      "termination_exit": {
+        "mean": 6.866666666666666,
+        "min": 3.0,
+        "max": 14.0,
+        "std_dev": 3.6813558578845584
+      },
+      "data_portability": {
+        "mean": 7.5,
+        "min": 7.5,
+        "max": 7.5,
+        "std_dev": 0.0
+      },
+      "support_obligations": {
+        "mean": 7.8,
+        "min": 2.25,
+        "max": 10.5,
+        "std_dev": 2.6561922262624638
+      }
+    },
+    "critical_issues": {
+      "mean": 4.666666666666667,
+      "total": 70
+    }
+  }
+}

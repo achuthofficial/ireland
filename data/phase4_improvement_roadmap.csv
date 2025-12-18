@@ -1,0 +1,8 @@
+Phase,Priority,Category,Improvement,Effort,Impact,ROI
+Phase 4A - Quick Wins (1-2 weeks),3,Risk Scoring,Add CRITICAL risk tier for scores >85,Low,Medium,1.5
+Phase 4A - Quick Wins (1-2 weeks),4,User Experience,Distinguish 'not found' vs 'not applicable' for missing categories,Low,Medium,1.5
+Phase 4B - Medium Term (1-2 months),1,Robustness,Handle contracts with no detectable clauses gracefully,Medium,High,1.33
+Phase 4B - Medium Term (1-2 months),2,Detection Accuracy,Expand keyword dictionary with fuzzy matching,Medium,Medium,1.0
+Phase 4B - Medium Term (1-2 months),6,Performance,Optimize HTML parsing for large contracts (>100 pages),Medium,Low,0.67
+Phase 4B - Medium Term (1-2 months),8,Reporting,Add comparison mode for side-by-side vendor evaluation,Medium,High,1.33
+Phase 4C - Long Term (3-6 months),5,International Support,Add support for GDPR-specific clauses,High,High,1.0

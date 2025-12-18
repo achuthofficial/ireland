@@ -1,0 +1,188 @@
+{
+  "experiment_info": {
+    "date": "2025-12-18T06:24:17.909070",
+    "original_dataset_size": 50,
+    "augmented_dataset_size": 68,
+    "smote_applied": true,
+    "test_size": 0.2,
+    "random_seed": 42
+  },
+  "best_model": {
+    "name": "Gradient Boosting",
+    "test_accuracy": 1.0,
+    "metrics": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "cv_mean": 0.8527272727272728,
+      "cv_std": 0.07144320983413999,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "confusion_matrix": [
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        High       1.00      1.00      1.00         7\n      Medium       1.00      1.00      1.00         7\n\n    accuracy                           1.00        14\n   macro avg       1.00      1.00      1.00        14\nweighted avg       1.00      1.00      1.00        14\n"
+    }
+  },
+  "all_models": {
+    "Random Forest": {
+      "train_accuracy": 0.9444444444444444,
+      "test_accuracy": 0.6428571428571429,
+      "cv_mean": 0.7381818181818182,
+      "cv_std": 0.08016511885472222,
+      "precision": 0.6458333333333333,
+      "recall": 0.6428571428571429,
+      "f1_score": 0.6410256410256411,
+      "confusion_matrix": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        High       0.62      0.71      0.67         7\n      Medium       0.67      0.57      0.62         7\n\n    accuracy                           0.64        14\n   macro avg       0.65      0.64      0.64        14\nweighted avg       0.65      0.64      0.64        14\n"
+    },
+    "Gradient Boosting": {
+      "train_accuracy": 1.0,
+      "test_accuracy": 1.0,
+      "cv_mean": 0.8527272727272728,
+      "cv_std": 0.07144320983413999,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "confusion_matrix": [
+        [
+          7,
+          0
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        High       1.00      1.00      1.00         7\n      Medium       1.00      1.00      1.00         7\n\n    accuracy                           1.00        14\n   macro avg       1.00      1.00      1.00        14\nweighted avg       1.00      1.00      1.00        14\n"
+    },
+    "Naive Bayes": {
+      "train_accuracy": 0.9074074074074074,
+      "test_accuracy": 0.6428571428571429,
+      "cv_mean": 0.6818181818181819,
+      "cv_std": 0.13483997249264845,
+      "precision": 0.6749999999999999,
+      "recall": 0.6428571428571429,
+      "f1_score": 0.6256684491978609,
+      "confusion_matrix": [
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        High       0.75      0.43      0.55         7\n      Medium       0.60      0.86      0.71         7\n\n    accuracy                           0.64        14\n   macro avg       0.68      0.64      0.63        14\nweighted avg       0.67      0.64      0.63        14\n"
+    },
+    "Logistic Regression": {
+      "train_accuracy": 0.9259259259259259,
+      "test_accuracy": 0.7857142857142857,
+      "cv_mean": 0.8345454545454546,
+      "cv_std": 0.06615783781331,
+      "precision": 0.8499999999999999,
+      "recall": 0.7857142857142857,
+      "f1_score": 0.7754010695187166,
+      "confusion_matrix": [
+        [
+          4,
+          3
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        High       1.00      0.57      0.73         7\n      Medium       0.70      1.00      0.82         7\n\n    accuracy                           0.79        14\n   macro avg       0.85      0.79      0.78        14\nweighted avg       0.85      0.79      0.78        14\n"
+    },
+    "SVM": {
+      "train_accuracy": 0.6296296296296297,
+      "test_accuracy": 0.7142857142857143,
+      "cv_mean": 0.5036363636363637,
+      "cv_std": 0.09818181818181818,
+      "precision": 0.8181818181818181,
+      "recall": 0.7142857142857143,
+      "f1_score": 0.688888888888889,
+      "confusion_matrix": [
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        High       1.00      0.43      0.60         7\n      Medium       0.64      1.00      0.78         7\n\n    accuracy                           0.71        14\n   macro avg       0.82      0.71      0.69        14\nweighted avg       0.82      0.71      0.69        14\n"
+    }
+  },
+  "model_comparison": [
+    {
+      "Model": "Gradient Boosting",
+      "Train_Acc": 1.0,
+      "Test_Acc": 1.0,
+      "CV_Mean": 0.8527272727272728,
+      "CV_Std": 0.07144320983413999,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1_Score": 1.0
+    },
+    {
+      "Model": "Logistic Regression",
+      "Train_Acc": 0.9259259259259259,
+      "Test_Acc": 0.7857142857142857,
+      "CV_Mean": 0.8345454545454546,
+      "CV_Std": 0.06615783781331,
+      "Precision": 0.8499999999999999,
+      "Recall": 0.7857142857142857,
+      "F1_Score": 0.7754010695187166
+    },
+    {
+      "Model": "SVM",
+      "Train_Acc": 0.6296296296296297,
+      "Test_Acc": 0.7142857142857143,
+      "CV_Mean": 0.5036363636363637,
+      "CV_Std": 0.09818181818181818,
+      "Precision": 0.8181818181818181,
+      "Recall": 0.7142857142857143,
+      "F1_Score": 0.688888888888889
+    },
+    {
+      "Model": "Random Forest",
+      "Train_Acc": 0.9444444444444444,
+      "Test_Acc": 0.6428571428571429,
+      "CV_Mean": 0.7381818181818182,
+      "CV_Std": 0.08016511885472222,
+      "Precision": 0.6458333333333333,
+      "Recall": 0.6428571428571429,
+      "F1_Score": 0.6410256410256411
+    },
+    {
+      "Model": "Naive Bayes",
+      "Train_Acc": 0.9074074074074074,
+      "Test_Acc": 0.6428571428571429,
+      "CV_Mean": 0.6818181818181819,
+      "CV_Std": 0.13483997249264845,
+      "Precision": 0.6749999999999999,
+      "Recall": 0.6428571428571429,
+      "F1_Score": 0.6256684491978609
+    }
+  ]
+}

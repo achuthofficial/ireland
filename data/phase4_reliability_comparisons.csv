@@ -1,0 +1,11 @@
+Vendor,Original_Clauses,Retest_Clauses,Agreement_%,Perfect_Match
+Slack,2,1,50.0,No
+Clickup,4,3,75.0,No
+Amplitude,4,3,75.0,No
+Twilio,4,3,75.0,No
+Gitlab,1,0,0.0,No
+Fastly,4,3,75.0,No
+Dropbox,0,0,100.0,Yes
+Cloudflare,4,3,75.0,No
+Cisco,0,0,100.0,Yes
+Stripe,4,3,75.0,No

@@ -1,0 +1,10 @@
+vendor_name,total_score,risk_level,total_clauses,critical_issues
+Fly,65.5,MEDIUM,3,5
+Sync,68.0,HIGH,3,5
+Datadog,75.0,HIGH,3,6
+Shopify,79.0,HIGH,4,6
+Cloudflare,79.0,HIGH,4,6
+Atlassian,79.5,HIGH,5,6
+Mongodb,75.0,HIGH,3,6
+Render,75.0,HIGH,4,6
+Fastly,68.0,HIGH,4,5
